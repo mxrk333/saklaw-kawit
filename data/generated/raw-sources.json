@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-10-23T02:48:50.223Z",
+  "sources": [
+    {
+      "id": "balsahan-bisita",
+      "name": "Balsahan-Bisita",
+      "urls": [
+        "https://www.facebook.com/brgy.balsahan.bisita.2025/"
+      ],
+      "phone": "(046) 434 2404",
+      "phoneNote": "Barangay Hall Landline"
+    },
+    {
+      "id": "batong-dalig",
+      "name": "Batong Dalig",
+      "urls": [
+        "https://www.facebook.com/batong.dalig.kawit.cavite"
+      ]
+    },
+    {
+      "id": "aplaya",
+      "name": "Aplaya",
+      "urls": [
+        "https://www.facebook.com/barangay.aplaya.52"
+      ]
+    },
+    {
+      "id": "congbalay-legaspi",
+      "name": "Congbalay Legaspi",
+      "urls": [
+        "https://www.facebook.com/p/Brgy-congbalay-legaspi-100064672002900/"
+      ],
+      "phone": "(046) 438-3248"
+    },
+    {
+      "id": "gahak",
+      "name": "Gahak",
+      "urls": [
+        "https://www.facebook.com/profile.php?id=61577596696199"
+      ]
+    },
+    {
+      "id": "kaingen",
+      "name": "Kaingen",
+      "urls": [
+        "https://www.facebook.com/barangay.kaingen12"
+      ]
+    },
+    {
+      "id": "magdalo-putol",
+      "name": "Magdalo-Putol",
+      "urls": [
+        "https://www.facebook.com/brgymagdalopotol/"
+      ]
+    },
+    {
+      "id": "marulas",
+      "name": "Marulas",
+      "urls": [
+        "https://www.facebook.com/barangay.marulas.kawit.cavite"
+      ]
+    },
+    {
+      "id": "panamitan",
+      "name": "Panamitan",
+      "urls": [
+        "https://www.facebook.com/barangay.panamitan"
+      ]
+    },
+    {
+      "id": "poblacion",
+      "name": "Poblacion",
+      "urls": [
+        "https://www.facebook.com/brgy.poblacion.kawit.tribunal"
+      ]
+    },
+    {
+      "id": "pulvorista",
+      "name": "Pulvorista",
+      "urls": [],
+      "notes": [
+        "No Facebook page"
+      ]
+    },
+    {
+      "id": "samala-marquez",
+      "name": "Samala Marquez",
+      "urls": [
+        "https://www.facebook.com/brgysamala.marquez"
+      ]
+    }
+  ]
+}
