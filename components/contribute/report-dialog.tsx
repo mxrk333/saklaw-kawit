@@ -3,12 +3,12 @@
 import { Flag } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { toast } from "sonner";
+import { submitReportAction } from "@/app/actions/submit-report";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { REPORT_REASONS, reportSchema } from "@/lib/contributions/schemas";
-import { listingsRepository } from "@/lib/data/repository";
 
 export function ReportDialog({ listingKey, listingTitle }: { listingKey: string; listingTitle: string }) {
   const [open, setOpen] = useState(false);
@@ -26,8 +26,12 @@ export function ReportDialog({ listingKey, listingTitle }: { listingKey: string;
     }
     setSubmitting(true);
     try {
-      await listingsRepository.submitReport(parsed.data);
-      toast.success("Thanks — your report was sent to moderators for review.");
+      const result = await submitReportAction(parsed.data, listingTitle);
+      if (!result.ok) {
+        setError(result.message);
+        return;
+      }
+      toast.success("Thanks, your report was sent to the developer for review.");
       setOpen(false);
       setDetails("");
       setError(null);
@@ -41,15 +45,15 @@ export function ReportDialog({ listingKey, listingTitle }: { listingKey: string;
   return (
     <>
       <Button variant="ghost" size="sm" onClick={() => setOpen(true)}>
-        <Flag /> Report an issue
+        <Flag /> Report or suggest
       </Button>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent>
           <form onSubmit={onSubmit} className="grid gap-3">
             <DialogHeader>
-              <DialogTitle>Report inaccurate information</DialogTitle>
+              <DialogTitle>Report or suggest</DialogTitle>
               <DialogDescription>
-                About &ldquo;{listingTitle}&rdquo;. Reports are reviewed by moderators before anything changes.
+                About &ldquo;{listingTitle}&rdquo;. Send a correction, suggestion or concern. It is reviewed by the developer before anything changes.
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-1.5">

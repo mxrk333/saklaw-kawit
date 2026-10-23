@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { BrandBackdrop } from "./brand-backdrop";
 import { SiteHeader } from "./site-header";
 
@@ -16,6 +17,12 @@ export function PageShell({ title, intro, children }: { title?: string; intro?: 
         )}
         {children}
       </main>
+      <footer className="px-4 pb-6 text-center text-xs text-muted-foreground">
+        Independent project, not affiliated with the Municipality of Kawit or any LGU.{" "}
+        <Link href="/about" className="underline underline-offset-2">
+          About and disclaimer
+        </Link>
+      </footer>
     </div>
   );
 }

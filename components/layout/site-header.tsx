@@ -7,6 +7,7 @@ const NAV: ReadonlyArray<{ href: string; label: string; hideOnMobile?: boolean }
   { href: "/places", label: "Places" },
   { href: "/announcements", label: "Updates" },
   { href: "/events", label: "Events" },
+  { href: "/about", label: "About" },
 ];
 
 export function SiteHeader() {

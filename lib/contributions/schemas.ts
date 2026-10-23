@@ -5,12 +5,13 @@ export const REPORT_REASONS = [
   { value: "closed", label: "Permanently closed or moved" },
   { value: "duplicate", label: "Duplicate listing" },
   { value: "inappropriate", label: "Inappropriate or misleading" },
+  { value: "suggestion", label: "Suggestion or concern" },
   { value: "other", label: "Something else" },
 ] as const;
 
 export const reportSchema = z.object({
   listingKey: z.string().min(1),
-  reason: z.enum(["wrong-info", "closed", "duplicate", "inappropriate", "other"]),
+  reason: z.enum(["wrong-info", "closed", "duplicate", "inappropriate", "suggestion", "other"]),
   details: z
     .string()
     .trim()
