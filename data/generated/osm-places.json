@@ -1,7 +1,7 @@
 {
   "source": "OpenStreetMap contributors (ODbL)",
   "licenseUrl": "https://www.openstreetmap.org/copyright",
-  "fetchedAt": "2026-10-23T04:27:34.475Z",
+  "fetchedAt": "2026-10-23T06:00:02.995Z",
   "places": [
     {
       "osmType": "way",
@@ -125,8 +125,8 @@
       ]
     },
     {
-      "osmType": "node",
-      "osmId": 13961972363,
+      "osmType": "way",
+      "osmId": 780080591,
       "name": "7-Eleven",
       "category": "shopping",
       "tags": [
@@ -134,10 +134,55 @@
         "convenience"
       ],
       "osmTag": "shop=convenience",
-      "lat": 14.4375414,
-      "lng": 120.9075297,
-      "barangay": "Tabon I",
-      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+      "lat": 14.417679,
+      "lng": 120.8990722,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "node",
@@ -1512,22 +1557,6 @@
     },
     {
       "osmType": "node",
-      "osmId": 1905845935,
-      "name": "CVM Pawnshop Money Changer",
-      "category": "shopping",
-      "tags": [
-        "store",
-        "shop",
-        "pawnbroker"
-      ],
-      "osmTag": "shop=pawnbroker",
-      "lat": 14.4492192,
-      "lng": 120.9208021,
-      "barangay": "Binakayan",
-      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
-    },
-    {
-      "osmType": "node",
       "osmId": 4104884304,
       "name": "Dali",
       "category": "shopping",
@@ -1599,7 +1628,10 @@
       "tags": [
         "restaurant",
         "food",
-        "fast food"
+        "fast food",
+        "coffee",
+        "coffee shop",
+        "kape"
       ],
       "osmTag": "amenity=fast_food",
       "lat": 14.4330333,
@@ -1902,6 +1934,22 @@
       "lng": 120.9098126,
       "barangay": "Marulas",
       "address": "Tirona Highway, Marulas, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153498,
+      "name": "Gemcraft Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4497045,
+      "lng": 120.922286,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -2221,22 +2269,6 @@
     },
     {
       "osmType": "node",
-      "osmId": 1905845894,
-      "name": "Jaro Pawnshop",
-      "category": "shopping",
-      "tags": [
-        "store",
-        "shop",
-        "pawnbroker"
-      ],
-      "osmTag": "shop=pawnbroker",
-      "lat": 14.449419,
-      "lng": 120.9218951,
-      "barangay": "Binakayan",
-      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
-    },
-    {
-      "osmType": "node",
       "osmId": 11060771000,
       "name": "Jaro Pawnshop",
       "category": "shopping",
@@ -2248,6 +2280,22 @@
       "osmTag": "shop=pawnbroker",
       "lat": 14.4498651,
       "lng": 120.9236184,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845894,
+      "name": "Jaro Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.449419,
+      "lng": 120.9218951,
       "barangay": "Binakayan",
       "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
@@ -3193,6 +3241,23 @@
     },
     {
       "osmType": "way",
+      "osmId": 179938442,
+      "name": "Minimart",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience",
+        "sari-sari",
+        "sari sari store"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4344297,
+      "lng": 120.9005066,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
       "osmId": 180153495,
       "name": "Minute Burger",
       "category": "food",
@@ -3312,21 +3377,6 @@
       "lng": 120.9083591,
       "barangay": "Tabon I",
       "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
-    },
-    {
-      "osmType": "node",
-      "osmId": 12919103324,
-      "name": "O!Save",
-      "category": "shopping",
-      "tags": [
-        "store",
-        "convenience"
-      ],
-      "osmTag": "shop=convenience",
-      "lat": 14.4488954,
-      "lng": 120.9235132,
-      "barangay": "Binakayan",
-      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -4216,7 +4266,7 @@
         "government",
         "office"
       ],
-      "osmTag": "amenity=townhall",
+      "osmTag": "office=government",
       "lat": 14.4397156,
       "lng": 120.8888312,
       "barangay": "Santa Isabel",

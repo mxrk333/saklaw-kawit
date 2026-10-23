@@ -28,6 +28,8 @@ export function geometryBounds(geometry) {
   return [Math.min(...lngs), Math.min(...lats), Math.max(...lngs), Math.max(...lats)];
 }
 
+/** Names that mark a coffee or milk-tea place even when OSM tags it as fast food or a restaurant. */
+const COFFEE_NAME = /coffee|caf[eé]|kape|espresso|brew|barista|roastery|milk\s?tea|boba|bubble tea|dunkin|tim hortons|gong cha|tiger sugar|macao imperial|\btea\b/i;
 const SARI_SARI = /sari[\s-]?sari|variety|mini[\s-]?mart|convenience/i;
 const WATER = /water\s*(refill|station|station)|refilling|purified|mineral/i;
 
@@ -74,8 +76,14 @@ export function classifyPlace({ category, type, name }) {
   if (key === "amenity=cafe") {
     return { category: "food", tags: ["coffee", "coffee shop", "cafe", "kape", "food"] };
   }
-  if (["amenity=restaurant", "amenity=fast_food", "amenity=cafe", "amenity=food_court", "amenity=canteen"].includes(key)) {
-    return { category: "food", tags: ["restaurant", "food", type.replace(/_/g, " ")] };
+  if (key === "shop=coffee" || key === "shop=tea") {
+    return { category: "food", tags: ["coffee", "coffee shop", "kape", "tea", "food"] };
+  }
+  if (["amenity=restaurant", "amenity=fast_food", "amenity=food_court", "amenity=canteen"].includes(key)) {
+    const tags = ["restaurant", "food", type.replace(/_/g, " ")];
+    // Chains and local shops that serve coffee or milk tea but are tagged fast_food/restaurant.
+    if (COFFEE_NAME.test(lowerName)) tags.push("coffee", "coffee shop", "kape");
+    return { category: "food", tags };
   }
   if (category === "tourism" && ["hotel", "guest_house", "hostel", "motel", "resort", "apartment", "chalet"].includes(type)) {
     return { category: "stay", tags: ["hotel", "stay", "accommodation", "lodging", "matutuluyan", type.replace(/_/g, " ")] };

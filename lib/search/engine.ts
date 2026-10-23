@@ -106,6 +106,15 @@ function trustBoost(listing: Listing): number {
   }
 }
 
+const COFFEE_WORDS = new Set(["coffee", "cafe", "kape", "espresso", "barista", "milktea", "boba"]);
+
+/** Coffee shops and milk-tea places, whichever category they are filed under. */
+function isCoffeeShop(listing: Listing): boolean {
+  if (listing.kind !== "business") return false;
+  const words = [...listing.tags, listing.title].flatMap(tokenize);
+  return words.some((word) => COFFEE_WORDS.has(word)) || /milk\s?tea|bubble tea/i.test(`${listing.title} ${listing.tags.join(" ")}`);
+}
+
 /**
  * Category membership. "Places & Services" is the umbrella for every place and
  * service (stores, sari-sari, water stations, offices...), and "Barangay
@@ -117,6 +126,8 @@ export function matchesCategory(listing: Listing, category: CategoryId): boolean
       return true;
     case "places":
       return listing.kind === "business";
+    case "coffee":
+      return isCoffeeShop(listing);
     case "barangay":
       return listing.category === "barangay" || (listing.kind === "business" && Boolean(listing.areaId));
     default:

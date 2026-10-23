@@ -31,7 +31,8 @@ const QUERIES = [
   "mall", "shopping mall", "plaza",
   "wholesale", "department store", "bakery", "hardware", "bank", "laundry", "salon", "barber", "gas station",
   "car wash", "gym", "bookstore", "clothing store", "electronics", "pawnshop", "cinema", "post office",
-  "cafe", "coffee shop", "coffee", "milk tea", "police station", "police", "fire station", "emergency",
+  "cafe", "coffee shop", "coffee", "milk tea", "bubble tea", "espresso", "coffee bar", "coffee house",
+  "Bo's Coffee", "Dunkin", "Tim Hortons", "Coffee Bean", "Cafe France", "Gong Cha", "Macao Imperial Tea", "Tiger Sugar", "Mary Grace", "police station", "police", "fire station", "emergency",
   "S&R", "Puregold", "Savemore", "Robinsons", "SM", "Jollibee",
 ];
 

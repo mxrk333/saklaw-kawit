@@ -2,6 +2,7 @@ export type CategoryId =
   | "all"
   | "places"
   | "food"
+  | "coffee"
   | "stay"
   | "attractions"
   | "health"

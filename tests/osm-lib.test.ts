@@ -20,6 +20,13 @@ describe("classifyPlace", () => {
     expect(classifyPlace({ category: "shop", type: "beverages", name: "Lemon Twist Water Station" })?.tags).toContain("water station");
   });
 
+  it("tags coffee and milk-tea places by name, even when OSM calls them fast food", () => {
+    expect(classifyPlace({ category: "amenity", type: "fast_food", name: "Dunkin'" })?.tags).toContain("coffee");
+    expect(classifyPlace({ category: "amenity", type: "fast_food", name: "Gong Cha Milk Tea" })?.tags).toContain("coffee");
+    expect(classifyPlace({ category: "amenity", type: "cafe", name: "Anything" })?.tags).toEqual(expect.arrayContaining(["coffee", "kape"]));
+    expect(classifyPlace({ category: "amenity", type: "fast_food", name: "Kenny Rogers Roasters" })?.tags).not.toContain("coffee");
+  });
+
   it("drops anything unrelated", () => {
     expect(classifyPlace({ category: "highway", type: "residential", name: "Some Road" })).toBeNull();
   });

@@ -56,6 +56,8 @@ export const FIXTURES: readonly Listing[] = [
   business({ id: "snr", title: "S&R Kawit", category: "shopping", tags: ["wholesale", "warehouse", "supermarket"] }),
   business({ id: "sr-pedro", title: "Lechon Manok ni Sr. Pedro", category: "food", tags: ["restaurant", "fast food"] }),
   business({ id: "cafe", title: "Fixture Coffee House", category: "food", tags: ["coffee", "coffee shop", "cafe", "kape", "food"] }),
+  business({ id: "kape", title: "Fixture Kapehan", category: "places", tags: ["coffee shop"] }),
+  business({ id: "roasters", title: "Fixture Roasters", category: "food", tags: ["restaurant", "fast food"] }),
   business({ id: "hospital", title: "Fixture Medical Center", category: "health", phone: "+63 46 000 0000", tags: ["hospital", "emergency", "medical", "health"] }),
   business({ id: "police", title: "Fixture Police Station", category: "government", phone: "+63 46 111 1111", tags: ["police", "police station", "pulis", "emergency", "government"] }),
   business({ id: "school", title: "Fixture Elementary School", category: "schools", tags: ["school", "elementary"] }),

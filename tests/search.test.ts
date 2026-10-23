@@ -141,3 +141,16 @@ describe("coffee, hospitals and police", () => {
     expect(ids("coffee shop")).not.toContain("hospital");
   });
 });
+
+describe("Coffee & Tea category", () => {
+  it("lists coffee shops whichever category they are filed under, and nothing else", () => {
+    const ids = search({ category: "coffee" }).map((r) => r.listing.id);
+    expect(ids).toEqual(expect.arrayContaining(["cafe", "kape"]));
+    expect(ids).not.toContain("roasters"); // "Roasters" is not coffee
+    expect(ids).not.toContain("hospital");
+  });
+
+  it("has a chip count that matches", () => {
+    expect(countByCategory(FIXTURES, NOW).coffee).toBe(search({ category: "coffee" }).length);
+  });
+});

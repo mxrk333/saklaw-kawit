@@ -74,6 +74,9 @@ highlights and zooms to its area; tapping inside an area on the map selects it. 
 is drawn as a hollow pin and has no directions, because it is not an address. Re-run both commands after adding barangays
 to `data/rawsources.md`.
 
+The **Coffee & Tea** chip groups every coffee shop and milk-tea place (cafes, plus chains OSM files as fast food, found by name),
+whichever category they sit in. For a place OSM lacks, add it in `data/places.md` with `type: coffee shop`.
+
 Places added by hand: `data/places.md` is for shops and services you know of that OpenStreetMap lacks (sari-sari stores,
 water stations...). One `# Name` block each with `geo: lat, lng`, `type:`, `address:` and an optional `source:` link.
 `pnpm build-sources` turns them into listings (shown as "Added by the SAKLAW team", unverified). Google Maps is not
