@@ -24,7 +24,7 @@ export function CategoryBar({ value, onChange }: CategoryBarProps) {
             aria-pressed={active}
             onClick={() => onChange(category.id)}
             className={cn(
-              "inline-flex h-8 shrink-0 items-center gap-1.5 rounded-full border px-3 text-xs font-medium transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+              "inline-flex h-9 shrink-0 lg:h-8 items-center gap-1.5 rounded-full border px-3 text-xs font-medium transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
               active
                 ? "border-primary bg-primary text-primary-foreground"
                 : "bg-card text-foreground hover:bg-muted",

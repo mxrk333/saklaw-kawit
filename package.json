@@ -14,7 +14,8 @@
     "prebuild": "pnpm copy-map-worker && pnpm build-sources",
     "build-sources": "node scripts/build-sources.mjs",
     "pretest": "pnpm build-sources",
-    "import-osm": "node scripts/import-osm.mjs"
+    "import-osm": "node scripts/import-osm.mjs",
+    "import-barangay-areas": "node scripts/import-barangay-areas.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

@@ -76,17 +76,17 @@ export function ListingDetails({ listing, now, openNow, directions, directionsOp
 
       <div className="flex flex-wrap gap-2">
         {coordinates && (
-          <Button onClick={() => onDirectionsOpenChange(!directionsOpen)} aria-expanded={directionsOpen}>
+          <Button className="h-10 px-4 lg:h-8" onClick={() => onDirectionsOpenChange(!directionsOpen)} aria-expanded={directionsOpen}>
             <Navigation /> Get directions
           </Button>
         )}
         {listing.kind === "business" && listing.phone && (
-          <a href={`tel:${listing.phone.replace(/[^+\d]/g, "")}`} className={buttonVariants({ variant: "outline" })}>
+          <a href={`tel:${listing.phone.replace(/[^+\d]/g, "")}`} className={cn(buttonVariants({ variant: "outline" }), "h-10 px-4 lg:h-8")}>
             <Phone /> Call
           </a>
         )}
         {listing.kind === "business" && listing.website && (
-          <a href={listing.website} target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: "outline" })}>
+          <a href={listing.website} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "h-10 px-4 lg:h-8")}>
             <Globe /> {new URL(listing.website).hostname.includes("facebook.com") ? "Facebook page" : "Website"}
           </a>
         )}
@@ -99,7 +99,7 @@ export function ListingDetails({ listing, now, openNow, directions, directionsOp
 
       {!coordinates && (
         <p className="rounded-lg bg-muted/60 p-2.5 text-xs text-muted-foreground">
-          No verified map location yet, so there is no map pin or in-app directions for this listing.
+          This shows the barangay area on the map, not the hall&apos;s exact location, so there are no directions yet.
         </p>
       )}
 

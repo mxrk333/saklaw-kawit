@@ -76,8 +76,10 @@ interface BaseEntity {
 export interface Business extends BaseEntity {
   kind: "business";
   address: string;
-  /** Omitted until a verified location exists; such listings get no map pin or directions. */
+  /** Exact location. Omitted until one is verified; such listings get no directions. */
   coordinates?: Coordinates;
+  /** Barangay area (data/barangay-areas.ts) shown on the map when there is no exact location. */
+  areaId?: string;
   phone?: string;
   website?: string;
   images: readonly string[];
@@ -123,6 +125,10 @@ export interface MapLocation {
   categoryLabel: string;
   address?: string;
   coordinates: Coordinates;
+  /** "area" means the pin marks the middle of a barangay, not a specific building. */
+  precision: "exact" | "area";
+  /** Barangay area to outline on the map when this location is selected. */
+  areaId?: string;
 }
 
 export interface SearchResult {

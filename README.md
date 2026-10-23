@@ -37,6 +37,38 @@ No Facebook page                    <- any other line is kept as a note
 no street address, hours or coordinates are added, and every entry is "Unverified". A listing only gets a map
 pin and directions once you add a `geo:` line for it.
 
+### OpenStreetMap places
+
+`pnpm import-osm` (run manually, not on every build) fetches Kawit's boundary and common places from
+OpenStreetMap via Nominatim: pharmacies, markets (talipapa), convenience / sari-sari stores, supermarkets, water
+stations, clinics, dentists, restaurants, schools and government offices. It keeps only named places inside Kawit's
+boundary and writes `data/generated/kawit-boundary.json` and `osm-places.json`. Barangay halls that match a barangay
+in `rawsources.md` supply that barangay's coordinates instead of being listed twice.
+
+Data © OpenStreetMap contributors, [ODbL](https://www.openstreetmap.org/copyright). Listings are shown as
+"Community submitted" with a link to the OSM element; hours are never assumed. Coverage depends on what mappers
+have added, so small shops are under-represented. Google Maps is deliberately not scraped (its terms prohibit it).
+
+Basemaps: the map opens on aerial imagery with road and place labels; the layers button switches to the vector map
+with 3D buildings. Imagery defaults to Esri World Imagery (keyless, attribution shown, subject to Esri's terms; use a
+MapTiler key or your own tiles for production). Google Maps imagery is not used: its terms don't allow it here.
+
+Terrain: 3D relief, hillshade and a sky are on by default using keyless public elevation tiles (Terrain Tiles on
+AWS). Kawit is a flat coastal plain, so relief is exaggerated (`NEXT_PUBLIC_TERRAIN_EXAGGERATION`, default 2); set
+`NEXT_PUBLIC_TERRAIN=off` to disable, or provide a MapTiler key / your own DEM in `.env.local`.
+
+Location: the locate button on the map starts live tracking (blue dot with accuracy ring). Tap again to follow, drag
+the map to stop following, tap once more to stop tracking. Nothing is requested until you tap it, and the map only
+follows you while you are inside Kawit.
+
+The map is limited to Kawit: panning is restricted to the municipality and everything outside the boundary is dimmed.
+
+Barangay areas: `pnpm build-sources && pnpm import-barangay-areas` fetches each listed barangay's outline from OpenStreetMap
+into `data/generated/barangay-areas.json` (8 have outlines, the rest only a mapped center point). Selecting a barangay
+highlights and zooms to its area; tapping inside an area on the map selects it. A point that only marks a barangay's middle
+is drawn as a hollow pin and has no directions, because it is not an address. Re-run both commands after adding barangays
+to `data/rawsources.md`.
+
 Announcements and events (`data/announcements.ts`, `data/events.ts`) are empty until real, attributed posts are
 added. Facebook pages are linked, not scraped.
 
@@ -51,7 +83,7 @@ Rules the code enforces (see `lib/utils/verification.ts`, `lib/utils/hours.ts`, 
 
 - `app/` routes: `/` explorer, `/places`, `/places/[id]`, `/announcements`, `/announcements/[id]`, `/events`
 - `components/{layout,search,map,places,listing,directions,announcements,contribute,ui}`
-- `lib/search` (engine, synonyms, suggestions), `lib/map` (config, layers, routing), `lib/data/repository.ts`
+- `scripts/` (raw-source parser, OSM importer), `lib/search` (engine, synonyms, suggestions), `lib/map` (config, layers, routing), `lib/data/repository.ts`
 - `data/` source data and generated JSON, `types/` shared models, `hooks/`
 
 ## Moving to Firebase

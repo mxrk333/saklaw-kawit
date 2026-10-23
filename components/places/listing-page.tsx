@@ -14,7 +14,7 @@ export function ListingPage({ listing, initialNow }: { listing: Listing; initial
   const now = useNow(initialNow);
   const [directionsOpen, setDirectionsOpen] = useState(false);
   const location = useMemo(() => toMapLocation(listing), [listing]);
-  const directions = useDirections(location?.coordinates ?? null);
+  const directions = useDirections(listing.coordinates ?? null);
   const locations = useMemo(() => (location ? [location] : []), [location]);
 
   return (
@@ -40,6 +40,7 @@ export function ListingPage({ listing, initialNow }: { listing: Listing; initial
             onPickOrigin={directions.pickOrigin}
             showPopup={false}
             bottomPadding={0}
+            topPadding={0}
             recenterTarget={location.coordinates}
           />
         </div>

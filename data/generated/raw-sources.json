@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T02:48:50.223Z",
+  "generatedAt": "2026-10-23T03:26:03.220Z",
   "sources": [
     {
       "id": "balsahan-bisita",
@@ -87,6 +87,41 @@
       "name": "Samala Marquez",
       "urls": [
         "https://www.facebook.com/brgysamala.marquez"
+      ]
+    },
+    {
+      "id": "san-sebastian",
+      "name": "San Sebastian",
+      "urls": [
+        "https://www.facebook.com/p/Barangay-San-Sebastian-Kawit-61553688495662/"
+      ]
+    },
+    {
+      "id": "tabon-i",
+      "name": "Tabon I",
+      "urls": [
+        "https://www.facebook.com/barangay.tabonuno.1"
+      ]
+    },
+    {
+      "id": "tabon-ii",
+      "name": "Tabon II",
+      "urls": [
+        "https://www.facebook.com/profile.php?id=61577108977769"
+      ]
+    },
+    {
+      "id": "tabon-iii",
+      "name": "Tabon III",
+      "urls": [
+        "https://www.facebook.com/barangay.taboniii"
+      ]
+    },
+    {
+      "id": "toclong",
+      "name": "Toclong",
+      "urls": [
+        "https://www.facebook.com/profile.php?id=61590347554958"
       ]
     }
   ]

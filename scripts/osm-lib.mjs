@@ -105,3 +105,36 @@ export function toPlace(result, boundary) {
     website: extra.website ?? extra["contact:website"],
   };
 }
+
+/** Area-weighted centroid of the largest outer ring; falls back to the bbox centre if it lands outside. */
+export function geometryCenter(geometry) {
+  const polygons = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
+  const ring = polygons.map(([outer]) => outer).sort((a, b) => Math.abs(ringArea(b)) - Math.abs(ringArea(a)))[0];
+  let area = 0;
+  let cx = 0;
+  let cy = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const cross = ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+    area += cross;
+    cx += (ring[j][0] + ring[i][0]) * cross;
+    cy += (ring[j][1] + ring[i][1]) * cross;
+  }
+  const lng = cx / (3 * area);
+  const lat = cy / (3 * area);
+  if (Number.isFinite(lng) && Number.isFinite(lat) && pointInGeometry(lng, lat, geometry)) return { lat, lng };
+  const [w, s, e, n] = geometryBounds(geometry);
+  return { lat: (s + n) / 2, lng: (w + e) / 2 };
+}
+
+function ringArea(ring) {
+  let area = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) area += ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+  return area / 2;
+}
+
+/** Rounds coordinates to ~1 m so the generated file stays small. */
+export function roundGeometry(geometry, decimals = 5) {
+  const factor = 10 ** decimals;
+  const round = (node) => (typeof node[0] === "number" ? node.map((n) => Math.round(n * factor) / factor) : node.map(round));
+  return { type: geometry.type, coordinates: round(geometry.coordinates) };
+}

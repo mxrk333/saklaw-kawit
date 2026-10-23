@@ -6,6 +6,8 @@ describe("titleCaseName", () => {
   it("normalises capitalisation", () => {
     expect(titleCaseName("balsahan-Bisita")).toBe("Balsahan-Bisita");
     expect(titleCaseName("batong dalig")).toBe("Batong Dalig");
+    expect(titleCaseName("tabon ii")).toBe("Tabon II");
+    expect(titleCaseName("Tabon III ")).toBe("Tabon III");
   });
 });
 

@@ -13,6 +13,15 @@ export function buildPopupContent(location: MapLocation, onDirections: () => voi
   meta.className = "text-xs text-neutral-500";
   meta.textContent = [location.categoryLabel, location.address].filter(Boolean).join(" · ");
 
+  root.append(title, meta);
+  if (location.precision === "area") {
+    const note = document.createElement("p");
+    note.className = "text-xs text-neutral-500";
+    note.textContent = "Barangay area (not an exact address)";
+    root.append(note);
+    return root;
+  }
+
   const button = document.createElement("button");
   button.type = "button";
   button.className =
@@ -20,7 +29,7 @@ export function buildPopupContent(location: MapLocation, onDirections: () => voi
   button.textContent = "Get directions";
   button.addEventListener("click", onDirections);
 
-  root.append(title, meta, button);
+  root.append(button);
   return root;
 }
 

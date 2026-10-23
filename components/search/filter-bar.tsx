@@ -23,7 +23,7 @@ export function FilterBar({ openNowOnly, sort, count, onOpenNowChange, onSortCha
           onClick={() => onOpenNowChange(!openNowOnly)}
           title="Only businesses with confirmed hours that are open right now"
           className={cn(
-            "inline-flex h-7 items-center gap-1 rounded-full border px-2.5 text-xs font-medium focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+            "inline-flex h-9 items-center gap-1 rounded-full lg:h-7 border px-2.5 text-xs font-medium focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
             openNowOnly ? "border-primary bg-primary/10 text-primary" : "bg-card hover:bg-muted",
           )}
         >
@@ -35,7 +35,7 @@ export function FilterBar({ openNowOnly, sort, count, onOpenNowChange, onSortCha
           <select
             value={sort}
             onChange={(event) => onSortChange(event.target.value as SortMode)}
-            className="h-7 rounded-md border bg-card px-1.5 text-xs text-foreground"
+            className="h-9 rounded-md border bg-card px-1.5 text-xs text-foreground lg:h-7"
           >
             <option value="relevance">Relevance</option>
             <option value="recent">Recently updated</option>

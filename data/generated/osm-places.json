@@ -1,0 +1,1939 @@
+{
+  "source": "OpenStreetMap contributors (ODbL)",
+  "licenseUrl": "https://www.openstreetmap.org/copyright",
+  "fetchedAt": "2026-10-23T02:57:05.809Z",
+  "places": [
+    {
+      "osmType": "way",
+      "osmId": 780080591,
+      "name": "7-Eleven",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.417679,
+      "lng": 120.8990722,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 7363729329,
+      "name": "7-Eleven",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4370709,
+      "lng": 120.9049452,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 20229657,
+      "name": "Aguinaldo Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.442436,
+      "lng": 120.9047069,
+      "barangay": "Tabon II",
+      "address": "Gregoria Street, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 291095031,
+      "name": "Alfamart",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4494179,
+      "lng": 120.9211267,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1531894665,
+      "name": "Alfamart",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4388998,
+      "lng": 120.8895206,
+      "barangay": "Santa Isabel",
+      "address": "Santonil Street, Santa Isabel, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 5650630025,
+      "name": "All Day Supermarket",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.425664,
+      "lng": 120.8917254,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 12458347741,
+      "name": "AllDay Rx+",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4257503,
+      "lng": 120.8918091,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1328171515,
+      "name": "Army Navy",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4311057,
+      "lng": 120.8972985,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4646135293,
+      "name": "Ayli's Tapsihan",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4501742,
+      "lng": 120.9267308,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite",
+      "phone": "+63 46 434 5959"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6514316486,
+      "name": "Barangay's Pharmacy",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4137517,
+      "lng": 120.9136223,
+      "barangay": "Lakersfield Subdivision",
+      "address": "Lakersfield Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 250890287,
+      "name": "Batong Dalig Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4349447,
+      "lng": 120.8977573,
+      "barangay": "Tabon III",
+      "address": "Daang Bakal Street, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 982012847,
+      "name": "Batong Dalig Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4348898,
+      "lng": 120.8974386,
+      "barangay": "Tabon III",
+      "address": "Daang Bakal Street, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 3644094692,
+      "name": "Big Bowl",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4367563,
+      "lng": 120.9061228,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654325,
+      "name": "Bikkuri Takoyaki",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4490801,
+      "lng": 120.9233017,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 692355568,
+      "name": "Binakayan Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4511857,
+      "lng": 120.9221851,
+      "barangay": "Binakayan",
+      "address": "Congbalay Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1325538014,
+      "name": "Binakayan Hospital and Medical Center",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=hospital",
+      "lat": 14.4517961,
+      "lng": 120.9264466,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 169195879,
+      "name": "Binakayan Market",
+      "category": "shopping",
+      "tags": [
+        "market",
+        "palengke",
+        "talipapa"
+      ],
+      "osmTag": "amenity=marketplace",
+      "lat": 14.4485359,
+      "lng": 120.9215442,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 11661809,
+      "name": "Binakayan National High School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4573353,
+      "lng": 120.9216126,
+      "barangay": "Binakayan",
+      "address": "Pulvorista Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 169195878,
+      "name": "Binakayan-Kanluran Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4480767,
+      "lng": 120.9171473,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4344434126,
+      "name": "Bisugo Eatery",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4363926,
+      "lng": 120.8903126,
+      "barangay": "Magdalo",
+      "address": "Magdiwang Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 3713211489,
+      "name": "Bisugo Eto! Eatery",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4176789,
+      "lng": 120.89945,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 2560376583,
+      "name": "Brethren Drugstore",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4175096,
+      "lng": 120.8990727,
+      "barangay": "San Sebastian",
+      "address": "Toclong-San Sebastian Road, San Sebastian, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18140875,
+      "name": "Burger King",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4284356,
+      "lng": 120.8944881,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 964237847,
+      "name": "Busan",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.408903,
+      "lng": 120.9023186,
+      "barangay": "Alapan II-A",
+      "address": "Lot 4 Lancaster Boulevard, Alapan II-A, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 166833847,
+      "name": "Cedz Restaurant",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4387691,
+      "lng": 120.9094243,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1255443394,
+      "name": "Chooks to Go",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.450128,
+      "lng": 120.9248713,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4104884304,
+      "name": "Dali",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4495482,
+      "lng": 120.9215879,
+      "barangay": "Binakayan",
+      "address": "Samala Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 2918821593,
+      "name": "DF-Med Pharmacy",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4176618,
+      "lng": 120.8994562,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654331,
+      "name": "Don Galo's Best",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4494196,
+      "lng": 120.9232174,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10584605323,
+      "name": "Dr. Hugo Dental Center",
+      "category": "health",
+      "tags": [
+        "dentist",
+        "dental",
+        "clinic",
+        "teeth"
+      ],
+      "osmTag": "amenity=dentist",
+      "lat": 14.4403168,
+      "lng": 120.9010454,
+      "barangay": "Tabon II",
+      "address": "Magdiwang Highway, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1170452970,
+      "name": "Dunkin'",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4330333,
+      "lng": 120.8996602,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18775986,
+      "name": "Emiliano T. Tirona Memorial National High School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4413386,
+      "lng": 120.909322,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153491,
+      "name": "Emilu's Mart",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.4498426,
+      "lng": 120.9239718,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4763772822,
+      "name": "Emilus Mart",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.449974,
+      "lng": 120.9243509,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 162715906,
+      "name": "Ester Robina Restaurant",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4525316,
+      "lng": 120.9262242,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 11661810,
+      "name": "Florante Ilano Memorial Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4573236,
+      "lng": 120.9219138,
+      "barangay": "Binakayan",
+      "address": "Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6983908645,
+      "name": "FPOP Kawit Clinic",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=clinic",
+      "lat": 14.4389829,
+      "lng": 120.8970747,
+      "barangay": "Panamitan",
+      "address": "25A Magdiwang Highway, Panamitan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 254975986,
+      "name": "Gahak Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4418927,
+      "lng": 120.9093855,
+      "barangay": "Gahak",
+      "address": "Daang Bakal Street, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 886589852,
+      "name": "Gahak-Marulas Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4436974,
+      "lng": 120.910387,
+      "barangay": "Gahak",
+      "address": "Gahak Road, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654339,
+      "name": "Generika",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4494358,
+      "lng": 120.9233751,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 555841403,
+      "name": "Goonz Mart",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4223816,
+      "lng": 120.8914615,
+      "barangay": "Centennial Town Plaza",
+      "address": "Onyx Street, Centennial Town Plaza, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 168816153,
+      "name": "Hidden Tapsihan",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.443196,
+      "lng": 120.9003797,
+      "barangay": "Wakas I",
+      "address": "Mascardo Street, Wakas I, Kawit, Cavite",
+      "website": "http://www.hiddentapsi.com"
+    },
+    {
+      "osmType": "way",
+      "osmId": 169102442,
+      "name": "Hidden Tapsihan Plus",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4343945,
+      "lng": 120.9009991,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 186912506,
+      "name": "Huge Cart",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.4496,
+      "lng": 120.9234951,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10591561048,
+      "name": "Integrated School of Science",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4353919,
+      "lng": 120.8889326,
+      "barangay": "Magdalo",
+      "address": "Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 167704359,
+      "name": "Jollibee",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4495777,
+      "lng": 120.9228716,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18140876,
+      "name": "Jollibee",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4283446,
+      "lng": 120.8941991,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19735078,
+      "name": "Jollibee",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4449195,
+      "lng": 120.9147949,
+      "barangay": "Marulas",
+      "address": "Antero Soriano Highway, Marulas, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 255070072,
+      "name": "Josephine's",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4374344,
+      "lng": 120.897427,
+      "barangay": "Panamitan",
+      "address": "Don Alfonso Street, Panamitan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 938640875,
+      "name": "Kaingen-Poblacion Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4455959,
+      "lng": 120.9033888,
+      "barangay": "Poblacion",
+      "address": "Tanggulan Street, Poblacion, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 262678832,
+      "name": "Kawit Kalayaan Hospital",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=hospital",
+      "lat": 14.4169817,
+      "lng": 120.8985429,
+      "barangay": "San Sebastian",
+      "address": "Toclong-San Sebastian Road, San Sebastian, Kawit, Cavite",
+      "phone": "+63 (46) 4388523"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153501,
+      "name": "Kawit Lying In Clinic",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=hospital",
+      "lat": 14.4489709,
+      "lng": 120.9207023,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 113656093,
+      "name": "Kawit Municipal Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4318018,
+      "lng": 120.8950823,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1520541898,
+      "name": "Kawit Primary Care Facility",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=clinic",
+      "lat": 14.4378931,
+      "lng": 120.9072561,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 353748434,
+      "name": "Kawit Tribunal",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4443113,
+      "lng": 120.9033233,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 13650021873,
+      "name": "KeemKatt Online Shop",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.412401,
+      "lng": 120.9143633,
+      "barangay": "Toclong",
+      "address": "Road 5, Toclong, Kawit, Cavite",
+      "phone": "09171676547"
+    },
+    {
+      "osmType": "way",
+      "osmId": 248800401,
+      "name": "Kenny Rogers Roasters",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4372594,
+      "lng": 120.905755,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654311,
+      "name": "KJ's American Burger House",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4496052,
+      "lng": 120.9233323,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1106335039,
+      "name": "Krispy Kreme",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4376218,
+      "lng": 120.9067878,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 5304079988,
+      "name": "Kuya J",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4290383,
+      "lng": 120.8941475,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6884835885,
+      "name": "Kyle’s Sushi & Ramen House",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4360914,
+      "lng": 120.8892492,
+      "barangay": "Magdalo",
+      "address": "Magdiwang Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153534,
+      "name": "Lechon Manok ni Sr. Pedro",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4504872,
+      "lng": 120.9256827,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10584622650,
+      "name": "Lechon Manok ni Sr. Pedro",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4428779,
+      "lng": 120.9033112,
+      "barangay": "Tabon II",
+      "address": "Gregoria Street, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654337,
+      "name": "Lemon Twist Water Station",
+      "category": "shopping",
+      "tags": [
+        "water",
+        "water station",
+        "water refilling"
+      ],
+      "osmTag": "shop=beverages",
+      "lat": 14.4488393,
+      "lng": 120.9233001,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11096482225,
+      "name": "Lots'a Pizza",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4500315,
+      "lng": 120.9235887,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 980102517,
+      "name": "Malicdem Eatery",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4326876,
+      "lng": 120.8989597,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 250793221,
+      "name": "Marulas Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4466723,
+      "lng": 120.9084667,
+      "barangay": "Marulas",
+      "address": "Centennial Loop, Marulas, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4544634390,
+      "name": "Mary Calkins School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4498738,
+      "lng": 120.9217625,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4344434127,
+      "name": "Mary Montessori School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4375758,
+      "lng": 120.8892904,
+      "barangay": "Magdalo",
+      "address": "Del Rey Street, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153509,
+      "name": "Massway Supermarket",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.4495005,
+      "lng": 120.9224538,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 605961440,
+      "name": "Max's Restaurant",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4377354,
+      "lng": 120.9065978,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10833073138,
+      "name": "Medison Pharmacy",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.428837,
+      "lng": 120.8885852,
+      "barangay": "Magdalo",
+      "address": "Bethlehem, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153511,
+      "name": "Mercury Drug",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.450085,
+      "lng": 120.9234259,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 5304079987,
+      "name": "Mercury Drug",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4289487,
+      "lng": 120.8940147,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153495,
+      "name": "Minute Burger",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.44993,
+      "lng": 120.9229185,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 162571303,
+      "name": "Mr. Kim's Unlimited Korean BBQ and Buffet",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4342366,
+      "lng": 120.9014874,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite",
+      "phone": "+63 (945) 3463626"
+    },
+    {
+      "osmType": "node",
+      "osmId": 5338834110,
+      "name": "MRP House of Grill",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4583503,
+      "lng": 120.924384,
+      "barangay": "Binakayan",
+      "address": "KM21+550 Covelandia Road, Binakayan, Kawit, Cavite",
+      "phone": "+63 (915) 342 9384"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10297941009,
+      "name": "Necomedes Store",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.447021,
+      "lng": 120.9149413,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 12919103324,
+      "name": "O!Save",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4488954,
+      "lng": 120.9235132,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1920126721,
+      "name": "OMP Carinderia",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4288783,
+      "lng": 120.894662,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 168831684,
+      "name": "Onda Medical Clinic",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=clinic",
+      "lat": 14.443452,
+      "lng": 120.9025833,
+      "barangay": "Poblacion",
+      "address": "Tirona Highway, Poblacion, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 179938443,
+      "name": "Orange County Grill",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4343837,
+      "lng": 120.9002956,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1341197751,
+      "name": "Pampini Halo-halo Restaurant",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4297282,
+      "lng": 120.8949666,
+      "barangay": "Batong Dalig",
+      "address": "9059 Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "phone": "+63 (46) 484 3238"
+    },
+    {
+      "osmType": "way",
+      "osmId": 250890124,
+      "name": "Panamitan Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4395718,
+      "lng": 120.8978202,
+      "barangay": "Panamitan",
+      "address": "Magdiwang Highway, Panamitan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 984134908,
+      "name": "Panamitan Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.436869,
+      "lng": 120.8930555,
+      "barangay": "Magdalo",
+      "address": "Magdiwang Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 168531474,
+      "name": "Pelican Bleu",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4533345,
+      "lng": 120.9262265,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 8301700536,
+      "name": "Pizza Hut",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4370855,
+      "lng": 120.9050614,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 938640873,
+      "name": "Poblacion Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4453635,
+      "lng": 120.9037573,
+      "barangay": "Poblacion",
+      "address": "Tanggulan Street, Poblacion, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 690080902,
+      "name": "Potol-Santa Isabel Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4381511,
+      "lng": 120.8886463,
+      "barangay": "Magdalo",
+      "address": "Del Rey Street, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 16083834,
+      "name": "Puregold",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.4273597,
+      "lng": 120.8938738,
+      "barangay": "Batong Dalig",
+      "address": "Kalayaan Road, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11235134137,
+      "name": "Puregold",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.4365071,
+      "lng": 120.9048036,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 162715901,
+      "name": "R&A Malvar Supermart",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.450662,
+      "lng": 120.9251883,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6964214886,
+      "name": "Ramen Nado",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4375063,
+      "lng": 120.8922595,
+      "barangay": "Magdalo",
+      "address": "Magdiwang Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654342,
+      "name": "Ricafort-Miron Dental Clinic",
+      "category": "health",
+      "tags": [
+        "dentist",
+        "dental",
+        "clinic",
+        "teeth"
+      ],
+      "osmTag": "amenity=dentist",
+      "lat": 14.4488746,
+      "lng": 120.9232938,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 839560714,
+      "name": "S&R New York Style Pizza",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4278585,
+      "lng": 120.8936784,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 168831686,
+      "name": "Saint Mary Magdalene School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4445931,
+      "lng": 120.9039751,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 243781002,
+      "name": "Samala-Marquez Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4545127,
+      "lng": 120.9198546,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 7363729328,
+      "name": "Samgyupsalamat",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4371056,
+      "lng": 120.9051519,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18140873,
+      "name": "San Pedro Calungsod Medical Center",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=hospital",
+      "lat": 14.4277236,
+      "lng": 120.8948025,
+      "barangay": "Batong Dalig",
+      "address": "Kalayaan Road, Batong Dalig, Kawit, Cavite",
+      "phone": "+63 46 458 1176"
+    },
+    {
+      "osmType": "way",
+      "osmId": 417241038,
+      "name": "Santa Isabel Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4397156,
+      "lng": 120.8888312,
+      "barangay": "Santa Isabel",
+      "address": "Santonil Street, Santa Isabel, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6760752734,
+      "name": "Santa Isabel Health Center",
+      "category": "health",
+      "tags": [
+        "clinic",
+        "doctor",
+        "medical",
+        "health"
+      ],
+      "osmTag": "amenity=clinic",
+      "lat": 14.4396831,
+      "lng": 120.8888438,
+      "barangay": "Santa Isabel",
+      "address": "Santonil Street, Santa Isabel, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 5935967188,
+      "name": "Sari-sari Store",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience",
+        "sari-sari",
+        "sari sari store"
+      ],
+      "osmTag": "shop=variety_store",
+      "lat": 14.4127806,
+      "lng": 120.9144876,
+      "barangay": "Toclong",
+      "address": "Road 5, Toclong, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 202281124,
+      "name": "Savemore",
+      "category": "shopping",
+      "tags": [
+        "grocery",
+        "supermarket",
+        "market"
+      ],
+      "osmTag": "shop=supermarket",
+      "lat": 14.4417513,
+      "lng": 120.9023463,
+      "barangay": "Tabon II",
+      "address": "Magdiwang Highway, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 266281858,
+      "name": "Shakey's",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4375421,
+      "lng": 120.9064483,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "phone": "+63 (46) 5467777; +63 (46) 4388437"
+    },
+    {
+      "osmType": "way",
+      "osmId": 218719777,
+      "name": "Sharry",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4345386,
+      "lng": 120.9011812,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153533,
+      "name": "Southstar Drug",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4500114,
+      "lng": 120.9230008,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 253577076,
+      "name": "Tabon I Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4383168,
+      "lng": 120.9040757,
+      "barangay": "Tabon I",
+      "address": "Daang Bakal Street, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1135489894,
+      "name": "Tabon II Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4424377,
+      "lng": 120.9036975,
+      "barangay": "Tabon II",
+      "address": "Gregoria Street, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4757304923,
+      "name": "Tapsi ni Mi",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4466487,
+      "lng": 120.9083992,
+      "barangay": "Marulas",
+      "address": "Centennial Loop, Marulas, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654321,
+      "name": "Tara Shawarma",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4494713,
+      "lng": 120.9233477,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153499,
+      "name": "TGP",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4498934,
+      "lng": 120.9226922,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11041501554,
+      "name": "TGP",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4280876,
+      "lng": 120.8937468,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 9763217048,
+      "name": "The Generics Pharmacy",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4383906,
+      "lng": 120.9041332,
+      "barangay": "Tabon I",
+      "address": "Daang Bakal Street, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1105442876,
+      "name": "Toclong Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.421342,
+      "lng": 120.9133263,
+      "barangay": "Toclong",
+      "address": "Toclong-San Sebastian Road, Toclong, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1332811683,
+      "name": "Tramo Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4461311,
+      "lng": 120.9161529,
+      "barangay": "Binakayan",
+      "address": "Daang Bakal Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 9310550017,
+      "name": "Tummy Avenue",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4482205,
+      "lng": 120.9261954,
+      "barangay": "Binakayan",
+      "address": "Bisita Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 938643283,
+      "name": "Wakas Elementary School",
+      "category": "schools",
+      "tags": [
+        "school",
+        "eskwela"
+      ],
+      "osmTag": "amenity=school",
+      "lat": 14.4441016,
+      "lng": 120.8990811,
+      "barangay": "Wakas II",
+      "address": "Tanggulan Street, Wakas II, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 202281123,
+      "name": "Wakas I Barangay Hall",
+      "category": "government",
+      "tags": [
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=townhall",
+      "lat": 14.4423932,
+      "lng": 120.900469,
+      "barangay": "Wakas I",
+      "address": "General Tirona Street, Wakas I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 12300628764,
+      "name": "Watsons",
+      "category": "shopping",
+      "tags": [
+        "pharmacy",
+        "botika",
+        "drugstore",
+        "medicine"
+      ],
+      "osmTag": "amenity=pharmacy",
+      "lat": 14.4501434,
+      "lng": 120.9236691,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 893210200,
+      "name": "Wendy's",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4277301,
+      "lng": 120.893544,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 168531477,
+      "name": "Zhearl Ria Grill and Restaurant",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "restaurant"
+      ],
+      "osmTag": "amenity=restaurant",
+      "lat": 14.4292651,
+      "lng": 120.8951166,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "phone": "+63 (46) 4843757"
+    }
+  ]
+}

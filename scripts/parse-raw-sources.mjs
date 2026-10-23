@@ -15,12 +15,15 @@ const URL_PATTERN = /^https?:\/\/\S+$/i;
 const GEO_PATTERN = /^geo:\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)$/i;
 const PHONE_PATTERN = /(\+?\(?\d[\d\s()-]{6,}\d)/;
 
-/** "balsahan-Bisita" -> "Balsahan-Bisita", "batong dalig" -> "Batong Dalig" */
+/** "balsahan-Bisita" -> "Balsahan-Bisita", "batong dalig" -> "Batong Dalig", "tabon ii" -> "Tabon II" */
 export function titleCaseName(raw) {
   return raw
     .trim()
     .split(/(\s+|-)/)
-    .map((part) => (part.length > 0 && /[a-z]/i.test(part[0]) ? part[0].toUpperCase() + part.slice(1).toLowerCase() : part))
+    .map((part) => {
+      if (/^[ivx]+$/i.test(part)) return part.toUpperCase(); // Roman numerals: "Tabon II"
+      return part.length > 0 && /[a-z]/i.test(part[0]) ? part[0].toUpperCase() + part.slice(1).toLowerCase() : part;
+    })
     .join("");
 }
 
