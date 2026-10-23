@@ -11,7 +11,18 @@ const cardClass =
   "flex w-full gap-3 rounded-xl border bg-card p-3 text-left transition-colors hover:bg-muted/60 focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none";
 
 /** Shared body for every listing card (explorer results and the list pages). */
-export function ResultCardContent({ listing, openNow, now }: { listing: Listing; openNow?: boolean; now: Date }) {
+export function ResultCardContent({
+  listing,
+  openNow,
+  now,
+  matchedOn,
+}: {
+  listing: Listing;
+  openNow?: boolean;
+  now: Date;
+  /** Words that matched the search; shown so results are explainable. */
+  matchedOn?: readonly string[];
+}) {
   return (
     <>
       <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
@@ -28,6 +39,12 @@ export function ResultCardContent({ listing, openNow, now }: { listing: Listing;
           {listing.kind === "business" && <OpenStatus business={listing} openNow={openNow} />}
           {listing.isDemo && <DemoBadge />}
         </span>
+        {listing.kind === "business" && listing.phone && (
+          <span className="block text-xs text-foreground">Phone: {listing.phone}</span>
+        )}
+        {matchedOn && matchedOn.length > 0 && (
+          <span className="block text-xs text-primary">Matched: {matchedOn.join(", ")}</span>
+        )}
         <FreshnessNote listing={listing} now={now} />
       </span>
     </>
@@ -50,7 +67,7 @@ export function ResultCard({ result, selected, now, onSelect }: ResultCardProps)
         aria-pressed={selected}
         className={cn(cardClass, selected && "border-primary bg-primary/5")}
       >
-        <ResultCardContent listing={result.listing} openNow={result.openNow} now={now} />
+        <ResultCardContent listing={result.listing} openNow={result.openNow} now={now} matchedOn={result.matchedOn} />
       </button>
     </li>
   );

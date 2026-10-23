@@ -4,14 +4,26 @@ import { normalize } from "./engine";
 import { SUGGESTION_VOCABULARY } from "./synonyms";
 
 export const DEFAULT_SUGGESTIONS: readonly string[] = [
-  "Dentist",
+  "Where to stay",
+  "Tourist attractions",
+  "Malls",
+  "Coffee shop",
+  "Hospital",
+  "Police station",
   "Pharmacy",
+  "Water station",
+  "Talipapa",
   "Restaurants",
-  "Grocery",
+  "Dentist",
   "Barangay hall",
-  "Curfew",
-  "Road closure",
-  "Events this week",
+];
+
+/** Full questions people might type; they are understood by lib/search/query.ts. */
+const QUESTION_SUGGESTIONS: readonly string[] = [
+  "Where can I stay in Kawit?",
+  "What are the tourist attractions?",
+  "Where to eat",
+  "Where to buy medicine",
 ];
 
 const MAX_SUGGESTIONS = 6;
@@ -22,6 +34,7 @@ export function getSuggestions(input: string, listings: readonly Listing[]): str
 
   const pool = new Set<string>([
     ...DEFAULT_SUGGESTIONS,
+    ...QUESTION_SUGGESTIONS,
     ...SUGGESTION_VOCABULARY.map(capitalize),
     ...CATEGORIES.filter((c) => c.id !== "all").map((c) => c.label),
     ...listings.map((l) => l.title),

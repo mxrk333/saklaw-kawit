@@ -1,7 +1,9 @@
 import { SearchX, TriangleAlert } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
-import type { ContentType, SearchResult } from "@/types";
+import { SourceLinks } from "@/components/announcements/source-links";
+import { CATEGORY_LABELS } from "@/data/categories";
+import type { CategoryId, ContentType, SearchResult } from "@/types";
 import { ResultCard } from "./result-card";
 
 const SECTIONS: ReadonlyArray<{ type: ContentType; label: string }> = [
@@ -15,13 +17,18 @@ interface ResultListProps {
   loading: boolean;
   error: string | null;
   selectedKey: string | null;
+  category: CategoryId;
+  hasQuery: boolean;
   now: Date;
   onSelect: (key: string) => void;
   onClearFilters: () => void;
   onRetry: () => void;
 }
 
-export function ResultList({ results, loading, error, selectedKey, now, onSelect, onClearFilters, onRetry }: ResultListProps) {
+/** Categories fed by posts we only list once a real, attributed post exists. */
+const POST_CATEGORIES: readonly CategoryId[] = ["events", "traffic", "barangay"];
+
+export function ResultList({ results, loading, error, selectedKey, category, hasQuery, now, onSelect, onClearFilters, onRetry }: ResultListProps) {
   if (loading) {
     return (
       <div className="space-y-2" role="status" aria-label="Loading results">
@@ -41,6 +48,23 @@ export function ResultList({ results, loading, error, selectedKey, now, onSelect
         <Button variant="outline" size="sm" className="mt-3" onClick={onRetry}>
           Try again
         </Button>
+      </div>
+    );
+  }
+
+  if (results.length === 0 && !hasQuery && POST_CATEGORIES.includes(category)) {
+    return (
+      <div className="space-y-3">
+        <div className="rounded-xl border border-dashed p-5 text-center">
+          <p className="text-sm font-medium">No {CATEGORY_LABELS[category]} posted yet</p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            SAKLAW only lists real, attributed posts. Until some are added, check the local pages below.
+          </p>
+          <Button variant="outline" size="sm" className="mt-3" onClick={onClearFilters}>
+            Show everything
+          </Button>
+        </div>
+        <SourceLinks />
       </div>
     );
   }

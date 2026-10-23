@@ -26,6 +26,13 @@ const QUERIES = [
   "dentist", "clinic", "hospital",
   "restaurant", "carinderia", "fast food",
   "school", "barangay hall", "municipal hall",
+  "hotel", "resort", "inn", "lodge", "guest house", "apartelle", "motel",
+  "tourist attraction", "museum", "shrine", "monument", "historic", "park", "viewpoint",
+  "mall", "shopping mall", "plaza",
+  "wholesale", "department store", "bakery", "hardware", "bank", "laundry", "salon", "barber", "gas station",
+  "car wash", "gym", "bookstore", "clothing store", "electronics", "pawnshop", "cinema", "post office",
+  "cafe", "coffee shop", "coffee", "milk tea", "police station", "police", "fire station", "emergency",
+  "S&R", "Puregold", "Savemore", "Robinsons", "SM", "Jollibee",
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

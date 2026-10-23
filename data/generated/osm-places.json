@@ -1,11 +1,11 @@
 {
   "source": "OpenStreetMap contributors (ODbL)",
   "licenseUrl": "https://www.openstreetmap.org/copyright",
-  "fetchedAt": "2026-10-23T02:57:05.809Z",
+  "fetchedAt": "2026-10-23T04:27:34.475Z",
   "places": [
     {
       "osmType": "way",
-      "osmId": 780080591,
+      "osmId": 167704376,
       "name": "7-Eleven",
       "category": "shopping",
       "tags": [
@@ -13,14 +13,120 @@
         "convenience"
       ],
       "osmTag": "shop=convenience",
-      "lat": 14.417679,
-      "lng": 120.8990722,
-      "barangay": "",
-      "address": "Kalayaan Road, Kawit, Cavite"
+      "lat": 14.4497271,
+      "lng": 120.9232803,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite",
+      "phone": "+63 46 434 2610",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 311084472,
+      "name": "7-Eleven",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.428034,
+      "lng": 120.8944562,
+      "barangay": "Batong Dalig",
+      "address": "Kalayaan Road, Batong Dalig, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "node",
-      "osmId": 7363729329,
+      "osmId": 13961972363,
       "name": "7-Eleven",
       "category": "shopping",
       "tags": [
@@ -28,10 +134,26 @@
         "convenience"
       ],
       "osmTag": "shop=convenience",
-      "lat": 14.4370709,
-      "lng": 120.9049452,
+      "lat": 14.4375414,
+      "lng": 120.9075297,
       "barangay": "Tabon I",
       "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4100893290,
+      "name": "AC Pallera Hardware and General Merchandise",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "trade"
+      ],
+      "osmTag": "shop=trade",
+      "lat": 14.4491123,
+      "lng": 120.9234788,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "relation",
@@ -50,6 +172,41 @@
     },
     {
       "osmType": "way",
+      "osmId": 33772474,
+      "name": "Aguinaldo Shrine",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "landmark",
+        "pasyalan",
+        "museum"
+      ],
+      "osmTag": "tourism=museum",
+      "lat": 14.4450003,
+      "lng": 120.9068957,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 16062117,
+      "name": "Aguinaldo Shrine",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "park",
+        "pasyalan",
+        "park"
+      ],
+      "osmTag": "leisure=park",
+      "lat": 14.4455585,
+      "lng": 120.9069723,
+      "barangay": "Kaingen",
+      "address": "Kaingen, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
       "osmId": 291095031,
       "name": "Alfamart",
       "category": "shopping",
@@ -65,7 +222,7 @@
     },
     {
       "osmType": "way",
-      "osmId": 1531894665,
+      "osmId": 1164516731,
       "name": "Alfamart",
       "category": "shopping",
       "tags": [
@@ -73,10 +230,40 @@
         "convenience"
       ],
       "osmTag": "shop=convenience",
-      "lat": 14.4388998,
-      "lng": 120.8895206,
-      "barangay": "Santa Isabel",
-      "address": "Santonil Street, Santa Isabel, Kawit, Cavite"
+      "lat": 14.4388122,
+      "lng": 120.9086952,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1062773469,
+      "name": "Alfamart",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.4407767,
+      "lng": 120.903607,
+      "barangay": "Tabon II",
+      "address": "Gregoria Street, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1424381967,
+      "name": "Alfamart",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "convenience"
+      ],
+      "osmTag": "shop=convenience",
+      "lat": 14.410076,
+      "lng": 120.9004218,
+      "barangay": "Parksville Estates",
+      "address": "Azalea Street, Parksville Estates, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -91,6 +278,22 @@
       "osmTag": "shop=supermarket",
       "lat": 14.425664,
       "lng": 120.8917254,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 13788793543,
+      "name": "AllBank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4261113,
+      "lng": 120.8918562,
       "barangay": "Batong Dalig",
       "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
     },
@@ -112,6 +315,22 @@
       "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
     },
     {
+      "osmType": "node",
+      "osmId": 1905845868,
+      "name": "Angel's Burger",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4496487,
+      "lng": 120.922708,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
       "osmType": "way",
       "osmId": 1328171515,
       "name": "Army Navy",
@@ -125,7 +344,71 @@
       "lat": 14.4311057,
       "lng": 120.8972985,
       "barangay": "Batong Dalig",
-      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "node",
+      "osmId": 11223063618,
+      "name": "Ate K's",
+      "category": "stay",
+      "tags": [
+        "hotel",
+        "stay",
+        "accommodation",
+        "lodging",
+        "matutuluyan",
+        "guest house"
+      ],
+      "osmTag": "tourism=guest_house",
+      "lat": 14.448109,
+      "lng": 120.9202152,
+      "barangay": "Binakayan",
+      "address": "Bautista Compound, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -142,7 +425,138 @@
       "lng": 120.9267308,
       "barangay": "Binakayan",
       "address": "Tirona Highway, Binakayan, Kawit, Cavite",
-      "phone": "+63 46 434 5959"
+      "phone": "+63 46 434 5959",
+      "openingHours": "Mo-Sa 10:00-22:00",
+      "hours": [
+        [],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 169102441,
+      "name": "Bahay Tinapie",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bakery"
+      ],
+      "osmTag": "shop=bakery",
+      "lat": 14.4390018,
+      "lng": 120.9088944,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 9481965,
+      "name": "Baldomero Aguinaldo Museum",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "landmark",
+        "pasyalan",
+        "museum"
+      ],
+      "osmTag": "tourism=museum",
+      "lat": 14.4477689,
+      "lng": 120.9236765,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite",
+      "website": "https://nhcp.gov.ph/meseums/mba/",
+      "openingHours": "Tu-Su 08:00-16:00",
+      "hours": [
+        [
+          {
+            "open": "08:00",
+            "close": "16:00"
+          }
+        ],
+        [],
+        [
+          {
+            "open": "08:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "16:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "node",
+      "osmId": 10579872315,
+      "name": "Baliwag",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4502117,
+      "lng": 120.9244846,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -159,7 +573,52 @@
       "lat": 14.4137517,
       "lng": 120.9136223,
       "barangay": "Lakersfield Subdivision",
-      "address": "Lakersfield Subdivision, Kawit, Cavite"
+      "address": "Lakersfield Subdivision, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-18:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "way",
@@ -192,6 +651,140 @@
       "address": "Daang Bakal Street, Tabon III, Kawit, Cavite"
     },
     {
+      "osmType": "way",
+      "osmId": 1242220248,
+      "name": "Battle of Binakayan",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4509727,
+      "lng": 120.9208606,
+      "barangay": "Binakayan",
+      "address": "Samala Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 311261362,
+      "name": "Battle of Binakayan",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "park",
+        "pasyalan",
+        "park"
+      ],
+      "osmTag": "leisure=park",
+      "lat": 14.4589726,
+      "lng": 120.9223508,
+      "barangay": "Binakayan",
+      "address": "Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 3168599261,
+      "name": "Battle of Binakayan Monument",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "monument"
+      ],
+      "osmTag": "historic=monument",
+      "lat": 14.458943,
+      "lng": 120.9223788,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 291056825,
+      "name": "BDO",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4494784,
+      "lng": 120.9209604,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 8301700534,
+      "name": "BDO",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4288928,
+      "lng": 120.8939657,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-16:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "16:00"
+          }
+        ]
+      ]
+    },
+    {
       "osmType": "node",
       "osmId": 3644094692,
       "name": "Big Bowl",
@@ -206,6 +799,24 @@
       "lng": 120.9061228,
       "barangay": "Tabon I",
       "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10833044928,
+      "name": "Big Dreams Coffee",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4393531,
+      "lng": 120.8979401,
+      "barangay": "Panamitan",
+      "address": "Magdiwang Highway, Panamitan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -239,15 +850,34 @@
       "address": "Congbalay Street, Binakayan, Kawit, Cavite"
     },
     {
+      "osmType": "node",
+      "osmId": 10579427169,
+      "name": "Binakayan Hardware and Construction Supply",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "trade"
+      ],
+      "osmTag": "shop=trade",
+      "lat": 14.4483441,
+      "lng": 120.9233755,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
       "osmType": "way",
       "osmId": 1325538014,
       "name": "Binakayan Hospital and Medical Center",
       "category": "health",
       "tags": [
-        "clinic",
-        "doctor",
+        "hospital",
+        "ospital",
+        "emergency",
         "medical",
-        "health"
+        "health",
+        "clinic",
+        "doctor"
       ],
       "osmTag": "amenity=hospital",
       "lat": 14.4517961,
@@ -285,6 +915,26 @@
       "lng": 120.9216126,
       "barangay": "Binakayan",
       "address": "Pulvorista Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4318280802,
+      "name": "Binakayan Police Outpost",
+      "category": "government",
+      "tags": [
+        "police",
+        "police station",
+        "pulis",
+        "pnp",
+        "emergency",
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=police",
+      "lat": 14.4500107,
+      "lng": 120.9233158,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -334,6 +984,38 @@
       "address": "Kalayaan Road, Kawit, Cavite"
     },
     {
+      "osmType": "way",
+      "osmId": 169832986,
+      "name": "BPI",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4501651,
+      "lng": 120.9231583,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845913,
+      "name": "Bread Plus Bakeshop",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bakery"
+      ],
+      "osmTag": "shop=bakery",
+      "lat": 14.4501068,
+      "lng": 120.9247235,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
       "osmType": "node",
       "osmId": 2560376583,
       "name": "Brethren Drugstore",
@@ -351,22 +1033,6 @@
       "address": "Toclong-San Sebastian Road, San Sebastian, Kawit, Cavite"
     },
     {
-      "osmType": "relation",
-      "osmId": 18140875,
-      "name": "Burger King",
-      "category": "food",
-      "tags": [
-        "restaurant",
-        "food",
-        "fast food"
-      ],
-      "osmTag": "amenity=fast_food",
-      "lat": 14.4284356,
-      "lng": 120.8944881,
-      "barangay": "Batong Dalig",
-      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
-    },
-    {
       "osmType": "way",
       "osmId": 964237847,
       "name": "Busan",
@@ -380,7 +1046,181 @@
       "lat": 14.408903,
       "lng": 120.9023186,
       "barangay": "Alapan II-A",
-      "address": "Lot 4 Lancaster Boulevard, Alapan II-A, Kawit, Cavite"
+      "address": "Lot 4 Lancaster Boulevard, Alapan II-A, Kawit, Cavite",
+      "openingHours": "Mo-Su 14:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "14:00",
+            "close": "21:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "node",
+      "osmId": 2991911637,
+      "name": "Buslink Hardware",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "hardware"
+      ],
+      "osmTag": "shop=hardware",
+      "lat": 14.4270333,
+      "lng": 120.892184,
+      "barangay": "Magdalo",
+      "address": "Antero Soriano Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 3157618560,
+      "name": "Cafe Down Under",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4367298,
+      "lng": 120.9060677,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 3199935202,
+      "name": "Cafe Moraco",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4291645,
+      "lng": 120.8950214,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Su-Th 12:00-22:00; Fr-Sa 12:00-02:00",
+      "hours": [
+        [
+          {
+            "open": "12:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "02:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "02:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 239060560,
+      "name": "Caltex",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.434194,
+      "lng": 120.9005111,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11096490706,
+      "name": "Carriaga Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4497584,
+      "lng": 120.92254,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -400,6 +1240,87 @@
     },
     {
       "osmType": "node",
+      "osmId": 3281984937,
+      "name": "Cestaves",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4298143,
+      "lng": 120.8950636,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 8301700535,
+      "name": "Chachago",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4371154,
+      "lng": 120.9052719,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "node",
       "osmId": 1255443394,
       "name": "Chooks to Go",
       "category": "food",
@@ -411,6 +1332,197 @@
       "osmTag": "amenity=fast_food",
       "lat": 14.450128,
       "lng": 120.9248713,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 243774744,
+      "name": "CleanFuel",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4386895,
+      "lng": 120.9092273,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 8301700532,
+      "name": "Coffee Project",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4256781,
+      "lng": 120.891497,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-20:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "node",
+      "osmId": 1334024942,
+      "name": "Collete's Buko Pie",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bakery"
+      ],
+      "osmTag": "shop=bakery",
+      "lat": 14.4575502,
+      "lng": 120.920304,
+      "barangay": "Binakayan",
+      "address": "Noveleta-CAVITEX Diversion Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1106335709,
+      "name": "Conti's Bakeshop and Restaurant",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bakery"
+      ],
+      "osmTag": "shop=bakery",
+      "lat": 14.4336026,
+      "lng": 120.8994206,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite",
+      "phone": "+63 (917) 8282614",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "node",
+      "osmId": 1797836385,
+      "name": "Countryside Cafe",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4548593,
+      "lng": 120.9271345,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845935,
+      "name": "CVM Pawnshop Money Changer",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4492192,
+      "lng": 120.9208021,
       "barangay": "Binakayan",
       "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
@@ -496,6 +1608,22 @@
       "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
     },
     {
+      "osmType": "node",
+      "osmId": 2952272554,
+      "name": "EastWest Unibank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4366434,
+      "lng": 120.9059145,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
       "osmType": "relation",
       "osmId": 18775986,
       "name": "Emiliano T. Tirona Memorial National High School",
@@ -509,6 +1637,46 @@
       "lng": 120.909322,
       "barangay": "Gahak",
       "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 161063137,
+      "name": "Emilio Aguinaldo Statue",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4456154,
+      "lng": 120.9067794,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Centennial Loop, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 7614836426,
+      "name": "Emilio Aguinaldo y Famy",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4453068,
+      "lng": 120.9068836,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -559,6 +1727,38 @@
       "address": "Covelandia Road, Binakayan, Kawit, Cavite"
     },
     {
+      "osmType": "node",
+      "osmId": 6162708757,
+      "name": "Filipinas Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.449974,
+      "lng": 120.9231448,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 3700163013,
+      "name": "FL Electronics",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "electronics"
+      ],
+      "osmTag": "shop=electronics",
+      "lat": 14.4176999,
+      "lng": 120.8994424,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite"
+    },
+    {
       "osmType": "relation",
       "osmId": 11661810,
       "name": "Florante Ilano Memorial Elementary School",
@@ -572,6 +1772,22 @@
       "lng": 120.9219138,
       "barangay": "Binakayan",
       "address": "Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1135465139,
+      "name": "Flying V",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4489562,
+      "lng": 120.9196488,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -588,7 +1804,58 @@
       "lat": 14.4389829,
       "lng": 120.8970747,
       "barangay": "Panamitan",
-      "address": "25A Magdiwang Highway, Panamitan, Kawit, Cavite"
+      "address": "25A Magdiwang Highway, Panamitan, Kawit, Cavite",
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "hours": [
+        [],
+        [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 1134931871,
+      "name": "Fuel Central",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4503438,
+      "lng": 120.9246034,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -619,6 +1886,58 @@
       "lng": 120.910387,
       "barangay": "Gahak",
       "address": "Gahak Road, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 250793304,
+      "name": "Gasso",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4461079,
+      "lng": 120.9098126,
+      "barangay": "Marulas",
+      "address": "Tirona Highway, Marulas, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845918,
+      "name": "Gemcraft Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.449356,
+      "lng": 120.921677,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6402318597,
+      "name": "Gen. Baldomero Aguinaldo y Baloy",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4477708,
+      "lng": 120.923553,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -654,6 +1973,74 @@
     },
     {
       "osmType": "way",
+      "osmId": 1135483220,
+      "name": "Great Oil",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4448373,
+      "lng": 120.904941,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10584693328,
+      "name": "Green & Gold Hardware",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "trade"
+      ],
+      "osmTag": "shop=trade",
+      "lat": 14.4404239,
+      "lng": 120.9006793,
+      "barangay": "Tabon II",
+      "address": "Magdiwang Highway, Tabon II, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1424404898,
+      "name": "Handog Resort and Events Place",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "park",
+        "pasyalan",
+        "resort"
+      ],
+      "osmTag": "leisure=resort",
+      "lat": 14.4186255,
+      "lng": 120.9067798,
+      "barangay": "Estrella Homes 4",
+      "address": "Calle Roxas, Estrella Homes 4, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 13727708539,
+      "name": "Heart Flowers and Coffee - Kawit",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4174684,
+      "lng": 120.8990881,
+      "barangay": "San Sebastian",
+      "address": "Toclong-San Sebastian Road, San Sebastian, Kawit, Cavite",
+      "website": "https://linktr.ee/heartflowersandcoffee"
+    },
+    {
+      "osmType": "way",
       "osmId": 168816153,
       "name": "Hidden Tapsihan",
       "category": "food",
@@ -686,6 +2073,24 @@
       "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
     },
     {
+      "osmType": "node",
+      "osmId": 11262688029,
+      "name": "Hiwaga Cafe",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4103153,
+      "lng": 120.9011052,
+      "barangay": "",
+      "address": "Lancaster Boulevard, Kawit, Cavite"
+    },
+    {
       "osmType": "way",
       "osmId": 186912506,
       "name": "Huge Cart",
@@ -702,6 +2107,88 @@
       "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
+      "osmType": "way",
+      "osmId": 368290110,
+      "name": "In-Town Hotel",
+      "category": "stay",
+      "tags": [
+        "hotel",
+        "stay",
+        "accommodation",
+        "lodging",
+        "matutuluyan",
+        "motel"
+      ],
+      "osmTag": "tourism=motel",
+      "lat": 14.4276736,
+      "lng": 120.9141008,
+      "barangay": "Gahak",
+      "address": "Toclong Road, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 12001960891,
+      "name": "INAM Coffee",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4103681,
+      "lng": 120.9020205,
+      "barangay": "",
+      "address": "Lancaster Boulevard, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
+    },
+    {
       "osmType": "node",
       "osmId": 10591561048,
       "name": "Integrated School of Science",
@@ -715,6 +2202,119 @@
       "lng": 120.8889326,
       "barangay": "Magdalo",
       "address": "Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 10584431607,
+      "name": "J&T Express",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "post office"
+      ],
+      "osmTag": "amenity=post_office",
+      "lat": 14.4496922,
+      "lng": 120.9215368,
+      "barangay": "Binakayan",
+      "address": "Samala Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845894,
+      "name": "Jaro Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.449419,
+      "lng": 120.9218951,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11060771000,
+      "name": "Jaro Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4498651,
+      "lng": 120.9236184,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11041501553,
+      "name": "Jaro Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4280798,
+      "lng": 120.8937367,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 2006910215,
+      "name": "Jasmine",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4274085,
+      "lng": 120.8926639,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 239060559,
+      "name": "Jetti",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4382365,
+      "lng": 120.9077111,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 259242061,
+      "name": "Jlex Hardware",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "hardware"
+      ],
+      "osmTag": "shop=hardware",
+      "lat": 14.4193908,
+      "lng": 120.8991764,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite",
+      "phone": "+63 (46) 6868818"
     },
     {
       "osmType": "way",
@@ -797,14 +2397,76 @@
     },
     {
       "osmType": "way",
+      "osmId": 162715898,
+      "name": "Kalayaan Kawit MPS",
+      "category": "government",
+      "tags": [
+        "police",
+        "police station",
+        "pulis",
+        "pnp",
+        "emergency",
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=police",
+      "lat": 14.4172873,
+      "lng": 120.8995169,
+      "barangay": "",
+      "address": "Lancaster Boulevard, Kawit, Cavite",
+      "phone": "+63 (46) 6867411"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18775984,
+      "name": "Kartini Hotel",
+      "category": "stay",
+      "tags": [
+        "hotel",
+        "stay",
+        "accommodation",
+        "lodging",
+        "matutuluyan",
+        "hotel"
+      ],
+      "osmTag": "tourism=hotel",
+      "lat": 14.4393653,
+      "lng": 120.9093518,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 555874054,
+      "name": "Kawit Fire Station",
+      "category": "government",
+      "tags": [
+        "fire",
+        "fire station",
+        "bumbero",
+        "emergency",
+        "government",
+        "office"
+      ],
+      "osmTag": "amenity=fire_station",
+      "lat": 14.4357019,
+      "lng": 120.8891923,
+      "barangay": "Magdalo",
+      "address": "Magdiwang Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
       "osmId": 262678832,
       "name": "Kawit Kalayaan Hospital",
       "category": "health",
       "tags": [
-        "clinic",
-        "doctor",
+        "hospital",
+        "ospital",
+        "emergency",
         "medical",
-        "health"
+        "health",
+        "clinic",
+        "doctor"
       ],
       "osmTag": "amenity=hospital",
       "lat": 14.4169817,
@@ -819,10 +2481,13 @@
       "name": "Kawit Lying In Clinic",
       "category": "health",
       "tags": [
-        "clinic",
-        "doctor",
+        "hospital",
+        "ospital",
+        "emergency",
         "medical",
-        "health"
+        "health",
+        "clinic",
+        "doctor"
       ],
       "osmTag": "amenity=hospital",
       "lat": 14.4489709,
@@ -908,7 +2573,52 @@
       "lat": 14.4372594,
       "lng": 120.905755,
       "barangay": "Tabon I",
-      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "Mo-Su 07:30-22:00",
+      "hours": [
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "node",
@@ -927,22 +2637,6 @@
       "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
-      "osmType": "way",
-      "osmId": 1106335039,
-      "name": "Krispy Kreme",
-      "category": "food",
-      "tags": [
-        "restaurant",
-        "food",
-        "fast food"
-      ],
-      "osmTag": "amenity=fast_food",
-      "lat": 14.4376218,
-      "lng": 120.9067878,
-      "barangay": "Tabon I",
-      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
-    },
-    {
       "osmType": "node",
       "osmId": 5304079988,
       "name": "Kuya J",
@@ -956,7 +2650,52 @@
       "lat": 14.4290383,
       "lng": 120.8941475,
       "barangay": "Batong Dalig",
-      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Su 10:00-20:00",
+      "hours": [
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "node",
@@ -973,6 +2712,58 @@
       "lng": 120.8892492,
       "barangay": "Magdalo",
       "address": "Magdiwang Highway, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11543127434,
+      "name": "Labanan sa Binakayan",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4509722,
+      "lng": 120.9208575,
+      "barangay": "Binakayan",
+      "address": "Samala Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 11096482224,
+      "name": "LBC",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "post office"
+      ],
+      "osmTag": "amenity=post_office",
+      "lat": 14.4501357,
+      "lng": 120.9239823,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 5620090758,
+      "name": "LBC",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "post office"
+      ],
+      "osmTag": "amenity=post_office",
+      "lat": 14.4290323,
+      "lng": 120.8939566,
+      "barangay": "",
+      "address": "Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1023,6 +2814,67 @@
       "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
+      "osmType": "way",
+      "osmId": 306853840,
+      "name": "Lokal Mall",
+      "category": "shopping",
+      "tags": [
+        "mall",
+        "shopping mall",
+        "shopping"
+      ],
+      "osmTag": "shop=mall",
+      "lat": 14.4293688,
+      "lng": 120.8942238,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Su 10:00-20:00",
+      "hours": [
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      ]
+    },
+    {
       "osmType": "node",
       "osmId": 11096482225,
       "name": "Lots'a Pizza",
@@ -1040,19 +2892,19 @@
     },
     {
       "osmType": "way",
-      "osmId": 980102517,
-      "name": "Malicdem Eatery",
-      "category": "food",
+      "osmId": 169102443,
+      "name": "Mana Town Center",
+      "category": "shopping",
       "tags": [
-        "restaurant",
-        "food",
-        "fast food"
+        "mall",
+        "shopping mall",
+        "shopping"
       ],
-      "osmTag": "amenity=fast_food",
-      "lat": 14.4326876,
-      "lng": 120.8989597,
-      "barangay": "Tabon III",
-      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+      "osmTag": "shop=mall",
+      "lat": 14.4370098,
+      "lng": 120.9072576,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1101,6 +2953,25 @@
     },
     {
       "osmType": "way",
+      "osmId": 180153494,
+      "name": "Massway Department Store",
+      "category": "shopping",
+      "tags": [
+        "wholesale",
+        "warehouse",
+        "supermarket",
+        "store",
+        "shopping",
+        "department store"
+      ],
+      "osmTag": "shop=department_store",
+      "lat": 14.4494982,
+      "lng": 120.9212766,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
       "osmId": 180153509,
       "name": "Massway Supermarket",
       "category": "shopping",
@@ -1128,6 +2999,83 @@
       "osmTag": "amenity=restaurant",
       "lat": 14.4377354,
       "lng": 120.9065978,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "Mo-Su 10:00-22:00",
+      "hours": [
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 347966990,
+      "name": "McDonald's",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4287664,
+      "lng": 120.8936688,
+      "barangay": "Magdalo",
+      "address": "Kalayaan Road, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1272006042,
+      "name": "McDonald's",
+      "category": "food",
+      "tags": [
+        "restaurant",
+        "food",
+        "fast food"
+      ],
+      "osmTag": "amenity=fast_food",
+      "lat": 14.4358964,
+      "lng": 120.9049061,
       "barangay": "Tabon I",
       "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
     },
@@ -1180,7 +3128,68 @@
       "lat": 14.4289487,
       "lng": 120.8940147,
       "barangay": "Batong Dalig",
-      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Su 10:00-20:00",
+      "hours": [
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ],
+        [
+          {
+            "open": "10:00",
+            "close": "20:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153512,
+      "name": "Metrobank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4495752,
+      "lng": 120.9230641,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1213,39 +3222,96 @@
       "lng": 120.9014874,
       "barangay": "Tabon III",
       "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite",
-      "phone": "+63 (945) 3463626"
+      "phone": "+63 (945) 3463626",
+      "openingHours": "Mo-Su 11:00-14:00,17:00-22:00",
+      "hours": [
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "11:00",
+            "close": "14:00"
+          },
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      ]
     },
     {
-      "osmType": "node",
-      "osmId": 5338834110,
-      "name": "MRP House of Grill",
-      "category": "food",
+      "osmType": "way",
+      "osmId": 180153522,
+      "name": "Noynoy Car Wash",
+      "category": "places",
       "tags": [
-        "restaurant",
-        "food",
-        "fast food"
-      ],
-      "osmTag": "amenity=fast_food",
-      "lat": 14.4583503,
-      "lng": 120.924384,
-      "barangay": "Binakayan",
-      "address": "KM21+550 Covelandia Road, Binakayan, Kawit, Cavite",
-      "phone": "+63 (915) 342 9384"
-    },
-    {
-      "osmType": "node",
-      "osmId": 10297941009,
-      "name": "Necomedes Store",
-      "category": "shopping",
-      "tags": [
+        "service",
         "store",
-        "convenience"
+        "car wash"
       ],
-      "osmTag": "shop=convenience",
-      "lat": 14.447021,
-      "lng": 120.9149413,
-      "barangay": "Binakayan",
-      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+      "osmTag": "amenity=car_wash",
+      "lat": 14.4380873,
+      "lng": 120.9083591,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -1261,6 +3327,22 @@
       "lng": 120.9235132,
       "barangay": "Binakayan",
       "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845917,
+      "name": "Ochoa Realica Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4497403,
+      "lng": 120.9224782,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "node",
@@ -1326,7 +3408,52 @@
       "lng": 120.8949666,
       "barangay": "Batong Dalig",
       "address": "9059 Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
-      "phone": "+63 (46) 484 3238"
+      "phone": "+63 (46) 484 3238",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "way",
@@ -1375,6 +3502,244 @@
       "address": "Covelandia Road, Binakayan, Kawit, Cavite"
     },
     {
+      "osmType": "way",
+      "osmId": 1164516722,
+      "name": "Petron",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4400009,
+      "lng": 120.9102419,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1164785870,
+      "name": "Petron",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4285233,
+      "lng": 120.8890392,
+      "barangay": "Magdalo",
+      "address": "Noveleta-Rosario Diversion Road, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1263609323,
+      "name": "Petron",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4489941,
+      "lng": 120.9163348,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153531,
+      "name": "Philippine Business Bank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4496871,
+      "lng": 120.9220263,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 380655862,
+      "name": "Philippine Business Bank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4430184,
+      "lng": 120.9027716,
+      "barangay": "Wakas I",
+      "address": "Gregoria Street, Wakas I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 167173301,
+      "name": "Philippine Independence Declaration Mural",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4455734,
+      "lng": 120.9066018,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Centennial Loop, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 239060561,
+      "name": "Phoenix",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4368752,
+      "lng": 120.9063962,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 316549585,
+      "name": "Phoenix",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4280608,
+      "lng": 120.8941703,
+      "barangay": "Batong Dalig",
+      "address": "Kalayaan Road, Batong Dalig, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 591926456,
+      "name": "Phoenix",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4252456,
+      "lng": 120.8900962,
+      "barangay": "",
+      "address": "Antero Soriano Highway, Kawit, Cavite"
+    },
+    {
       "osmType": "node",
       "osmId": 8301700536,
       "name": "Pizza Hut",
@@ -1388,7 +3753,68 @@
       "lat": 14.4370855,
       "lng": 120.9050614,
       "barangay": "Tabon I",
-      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153475,
+      "name": "PNB",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4503969,
+      "lng": 120.926712,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1419,6 +3845,41 @@
       "lng": 120.8886463,
       "barangay": "Magdalo",
       "address": "Del Rey Street, Magdalo, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1721664785,
+      "name": "Prosperitea Milk Tea Shop",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4547376,
+      "lng": 120.9269598,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite",
+      "website": "http://www.facebook.com/prosperiteamilktea"
+    },
+    {
+      "osmType": "way",
+      "osmId": 291095110,
+      "name": "PSBank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4502299,
+      "lng": 120.9243047,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "relation",
@@ -1486,6 +3947,54 @@
     },
     {
       "osmType": "node",
+      "osmId": 10584413802,
+      "name": "Raquel Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4491974,
+      "lng": 120.9212244,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153529,
+      "name": "RCBC Savings Bank",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bank"
+      ],
+      "osmTag": "amenity=bank",
+      "lat": 14.4491546,
+      "lng": 120.9213782,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 4100893292,
+      "name": "Red Ribbon",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bakery"
+      ],
+      "osmTag": "shop=bakery",
+      "lat": 14.4496244,
+      "lng": 120.9229097,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
       "osmId": 1976654342,
       "name": "Ricafort-Miron Dental Clinic",
       "category": "health",
@@ -1502,20 +4011,73 @@
       "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
-      "osmType": "way",
-      "osmId": 839560714,
-      "name": "S&R New York Style Pizza",
+      "osmType": "node",
+      "osmId": 6975410485,
+      "name": "Rio’s Place Dry Cleaner",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "laundry"
+      ],
+      "osmTag": "shop=laundry",
+      "lat": 14.4390684,
+      "lng": 120.8968587,
+      "barangay": "Panamitan",
+      "address": "Magdiwang Highway, Panamitan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1797836400,
+      "name": "Riverside Cafe",
       "category": "food",
       "tags": [
-        "restaurant",
-        "food",
-        "fast food"
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
       ],
-      "osmTag": "amenity=fast_food",
-      "lat": 14.4278585,
-      "lng": 120.8936784,
-      "barangay": "Batong Dalig",
-      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+      "osmTag": "amenity=cafe",
+      "lat": 14.4545286,
+      "lng": 120.9267638,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 605495744,
+      "name": "Robertson Plaza",
+      "category": "shopping",
+      "tags": [
+        "mall",
+        "shopping mall",
+        "shopping"
+      ],
+      "osmTag": "shop=mall",
+      "lat": 14.4369653,
+      "lng": 120.9051526,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1379456815,
+      "name": "S&R Kawit",
+      "category": "shopping",
+      "tags": [
+        "wholesale",
+        "warehouse",
+        "supermarket",
+        "store",
+        "shopping",
+        "wholesale"
+      ],
+      "osmTag": "shop=wholesale",
+      "lat": 14.4322677,
+      "lng": 120.8999209,
+      "barangay": "Tabon III",
+      "address": "Central Drive, Tabon III, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1531,6 +4093,22 @@
       "lng": 120.9039751,
       "barangay": "Don Pedro Subdivision",
       "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1790785794,
+      "name": "Samala",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "bakery"
+      ],
+      "osmTag": "shop=bakery",
+      "lat": 14.4297665,
+      "lng": 120.8950105,
+      "barangay": "Batong Dalig",
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1561,7 +4139,52 @@
       "lat": 14.4371056,
       "lng": 120.9051519,
       "barangay": "Tabon I",
-      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "relation",
@@ -1569,10 +4192,13 @@
       "name": "San Pedro Calungsod Medical Center",
       "category": "health",
       "tags": [
-        "clinic",
-        "doctor",
+        "hospital",
+        "ospital",
+        "emergency",
         "medical",
-        "health"
+        "health",
+        "clinic",
+        "doctor"
       ],
       "osmTag": "amenity=hospital",
       "lat": 14.4277236,
@@ -1594,7 +4220,52 @@
       "lat": 14.4397156,
       "lng": 120.8888312,
       "barangay": "Santa Isabel",
-      "address": "Santonil Street, Santa Isabel, Kawit, Cavite"
+      "address": "Santonil Street, Santa Isabel, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "node",
@@ -1648,6 +4319,72 @@
     },
     {
       "osmType": "way",
+      "osmId": 176589423,
+      "name": "Seaoil",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4524065,
+      "lng": 120.9256139,
+      "barangay": "Binakayan",
+      "address": "Covelandia Road, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1416819167,
+      "name": "Seaoil",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4359207,
+      "lng": 120.9035264,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1170452665,
+      "name": "Seattle's Best Coffee",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4335056,
+      "lng": 120.8992228,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1903820175,
+      "name": "Servant",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "laundry"
+      ],
+      "osmTag": "shop=laundry",
+      "lat": 14.4422379,
+      "lng": 120.9105084,
+      "barangay": "Marulas",
+      "address": "Gahak Road, Marulas, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
       "osmId": 266281858,
       "name": "Shakey's",
       "category": "food",
@@ -1661,7 +4398,52 @@
       "lng": 120.9064483,
       "barangay": "Tabon I",
       "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
-      "phone": "+63 (46) 5467777; +63 (46) 4388437"
+      "phone": "+63 (46) 5467777; +63 (46) 4388437",
+      "openingHours": "Mo-Fr 10:30-22:00; Sa-Su 09:00-22:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "10:30",
+            "close": "22:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "way",
@@ -1681,6 +4463,124 @@
     },
     {
       "osmType": "way",
+      "osmId": 109740409,
+      "name": "Shell",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4501584,
+      "lng": 120.9257273,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 980102519,
+      "name": "Shell",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4321977,
+      "lng": 120.8984051,
+      "barangay": "Tabon III",
+      "address": "Antero Soriano Highway, Tabon III, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1418877689,
+      "name": "Shell",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4091928,
+      "lng": 120.9021576,
+      "barangay": "Alapan II-A",
+      "address": "Lancaster Boulevard, Alapan II-A, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 248800405,
+      "name": "Shell",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4384203,
+      "lng": 120.9080621,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 7614836423,
+      "name": "Site of the Proclamation of Philippine Independence",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4450929,
+      "lng": 120.9065543,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1905845948,
+      "name": "SMJ Pawnshop",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "pawnbroker"
+      ],
+      "osmTag": "shop=pawnbroker",
+      "lat": 14.4491197,
+      "lng": 120.9209016,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 9310550018,
+      "name": "South Perk Coffee",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4481559,
+      "lng": 120.926338,
+      "barangay": "Binakayan",
+      "address": "Bisita Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
       "osmId": 180153533,
       "name": "Southstar Drug",
       "category": "shopping",
@@ -1693,6 +4593,262 @@
       "osmTag": "amenity=pharmacy",
       "lat": 14.4500114,
       "lng": 120.9230008,
+      "barangay": "Binakayan",
+      "address": "Tirona Highway, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 819377520,
+      "name": "SR-Marz Fuel",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4117813,
+      "lng": 120.901412,
+      "barangay": "",
+      "address": "Lancaster Boulevard, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 1339303554,
+      "name": "Starbucks",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4309051,
+      "lng": 120.8971619,
+      "barangay": "Batong Dalig",
+      "address": "Evo Avenue, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Fr 07:00-00:00",
+      "hours": [
+        [],
+        [
+          {
+            "open": "07:00",
+            "close": "00:00"
+          }
+        ],
+        [
+          {
+            "open": "07:00",
+            "close": "00:00"
+          }
+        ],
+        [
+          {
+            "open": "07:00",
+            "close": "00:00"
+          }
+        ],
+        [
+          {
+            "open": "07:00",
+            "close": "00:00"
+          }
+        ],
+        [
+          {
+            "open": "07:00",
+            "close": "00:00"
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "osmType": "node",
+      "osmId": 7363729330,
+      "name": "Starbucks",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4368552,
+      "lng": 120.9049508,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "Mo-Su 08:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 162571304,
+      "name": "Subi-Monte Cafe",
+      "category": "food",
+      "tags": [
+        "coffee",
+        "coffee shop",
+        "cafe",
+        "kape",
+        "food"
+      ],
+      "osmTag": "amenity=cafe",
+      "lat": 14.4389428,
+      "lng": 120.9088363,
+      "barangay": "Gahak",
+      "address": "Antero Soriano Highway, Gahak, Kawit, Cavite",
+      "openingHours": "Mo-Su 12:00-23:00",
+      "hours": [
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ],
+        [
+          {
+            "open": "12:00",
+            "close": "23:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 180153536,
+      "name": "Tableria Central Hardware",
+      "category": "shopping",
+      "tags": [
+        "store",
+        "shop",
+        "trade"
+      ],
+      "osmTag": "shop=trade",
+      "lat": 14.4503917,
+      "lng": 120.9265007,
       "barangay": "Binakayan",
       "address": "Tirona Highway, Binakayan, Kawit, Cavite"
     },
@@ -1810,6 +4966,46 @@
       "address": "Daang Bakal Street, Tabon I, Kawit, Cavite"
     },
     {
+      "osmType": "node",
+      "osmId": 7614836432,
+      "name": "The House of Aguinaldo",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4451416,
+      "lng": 120.9069161,
+      "barangay": "Don Pedro Subdivision",
+      "address": "Tirona Highway, Don Pedro Subdivision, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 6402318598,
+      "name": "The House of General Baldomero",
+      "category": "attractions",
+      "tags": [
+        "attraction",
+        "tourist spot",
+        "historic",
+        "heritage",
+        "landmark",
+        "pasyalan",
+        "memorial"
+      ],
+      "osmTag": "historic=memorial",
+      "lat": 14.4477331,
+      "lng": 120.9235547,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
       "osmType": "way",
       "osmId": 1105442876,
       "name": "Toclong Elementary School",
@@ -1823,6 +5019,99 @@
       "lng": 120.9133263,
       "barangay": "Toclong",
       "address": "Toclong-San Sebastian Road, Toclong, Kawit, Cavite"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18153995,
+      "name": "Total",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4092344,
+      "lng": 120.9030333,
+      "barangay": "Alapan II-A",
+      "address": "Lancaster Boulevard, Alapan II-A, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 248800406,
+      "name": "Total",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.437317,
+      "lng": 120.9061005,
+      "barangay": "Tabon I",
+      "address": "Antero Soriano Highway, Tabon I, Kawit, Cavite",
+      "openingHours": "24/7",
+      "hours": [
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      ]
+    },
+    {
+      "osmType": "way",
+      "osmId": 780080592,
+      "name": "Total",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "fuel"
+      ],
+      "osmTag": "amenity=fuel",
+      "lat": 14.4178697,
+      "lng": 120.8992706,
+      "barangay": "",
+      "address": "Kalayaan Road, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1854,6 +5143,41 @@
       "lng": 120.9261954,
       "barangay": "Binakayan",
       "address": "Bisita Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "way",
+      "osmId": 291095191,
+      "name": "U Mart",
+      "category": "shopping",
+      "tags": [
+        "wholesale",
+        "warehouse",
+        "supermarket",
+        "store",
+        "shopping",
+        "department store"
+      ],
+      "osmTag": "shop=department_store",
+      "lat": 14.4492148,
+      "lng": 120.9230187,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
+    },
+    {
+      "osmType": "node",
+      "osmId": 1976654356,
+      "name": "Unisex Barber Shop",
+      "category": "places",
+      "tags": [
+        "service",
+        "store",
+        "hairdresser"
+      ],
+      "osmTag": "shop=hairdresser",
+      "lat": 14.4490172,
+      "lng": 120.9234991,
+      "barangay": "Binakayan",
+      "address": "General Flaviano Yengco Street, Binakayan, Kawit, Cavite"
     },
     {
       "osmType": "way",
@@ -1916,7 +5240,52 @@
       "lat": 14.4277301,
       "lng": 120.893544,
       "barangay": "Batong Dalig",
-      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite"
+      "address": "Antero Soriano Highway, Batong Dalig, Kawit, Cavite",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "hours": [
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      ]
     },
     {
       "osmType": "way",

@@ -1,9 +1,11 @@
 import type { ReactNode } from "react";
+import { BrandBackdrop } from "./brand-backdrop";
 import { SiteHeader } from "./site-header";
 
 export function PageShell({ title, intro, children }: { title?: string; intro?: string; children: ReactNode }) {
   return (
-    <>
+    <div className="relative isolate flex flex-1 flex-col">
+      <BrandBackdrop />
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 space-y-4 p-4 pb-12">
         {title && (
@@ -14,6 +16,6 @@ export function PageShell({ title, intro, children }: { title?: string; intro?: 
         )}
         {children}
       </main>
-    </>
+    </div>
   );
 }

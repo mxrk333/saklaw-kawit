@@ -1,3 +1,4 @@
+import type { WeeklyHours } from "@/types";
 import osm from "./generated/osm-places.json";
 
 /** One place imported from OpenStreetMap by scripts/import-osm.mjs. */
@@ -5,7 +6,7 @@ export interface OsmPlace {
   osmType: string;
   osmId: number;
   name: string;
-  category: "shopping" | "health" | "food" | "schools" | "government";
+  category: "places" | "shopping" | "health" | "food" | "stay" | "attractions" | "schools" | "government";
   tags: string[];
   /** Original OSM tag, e.g. "amenity=pharmacy". */
   osmTag: string;
@@ -15,6 +16,10 @@ export interface OsmPlace {
   address: string;
   phone?: string;
   website?: string;
+  /** Raw OSM opening_hours tag. */
+  openingHours?: string;
+  /** Parsed from openingHours; absent when the tag is missing or uses syntax we don't fully support. */
+  hours?: WeeklyHours;
 }
 
 const data = osm as { source: string; fetchedAt: string; places: OsmPlace[] };

@@ -1,5 +1,7 @@
 import {
+  BedDouble,
   CalendarDays,
+  Camera,
   Construction,
   GraduationCap,
   Landmark,
@@ -15,6 +17,8 @@ import { CATEGORIES } from "@/data/categories";
 import type { CategoryId } from "@/types";
 
 const ICONS: Record<string, LucideIcon> = {
+  BedDouble,
+  Camera,
   LayoutGrid,
   MapPin,
   Utensils,

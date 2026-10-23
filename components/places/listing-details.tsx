@@ -16,6 +16,7 @@ import { formatDate, formatDateTime } from "@/lib/utils/format";
 import { resolveVerification } from "@/lib/utils/verification";
 import { cn } from "@/lib/utils";
 import type { Business, Listing } from "@/types";
+import { FacebookPosts, isFacebookUrl } from "./facebook-posts";
 import { HoursTable } from "./hours-table";
 
 export function listingHref(listing: Listing): string {
@@ -74,6 +75,13 @@ export function ListingDetails({ listing, now, openNow, directions, directionsOp
 
       <p className="text-sm leading-relaxed">{listing.description}</p>
 
+      {listing.tags.includes("emergency") && (
+        <p role="note" className="rounded-lg bg-rose-50 p-2.5 text-xs text-rose-900 dark:bg-rose-950/40 dark:text-rose-200">
+          In an emergency call <a href="tel:911" className="font-semibold underline">911</a>, the national emergency hotline, instead of
+          searching for a number here.
+        </p>
+      )}
+
       <div className="flex flex-wrap gap-2">
         {coordinates && (
           <Button className="h-10 px-4 lg:h-8" onClick={() => onDirectionsOpenChange(!directionsOpen)} aria-expanded={directionsOpen}>
@@ -115,6 +123,9 @@ export function ListingDetails({ listing, now, openNow, directions, directionsOp
       )}
 
       <KindDetails listing={listing} now={now} />
+      {listing.kind === "business" && isFacebookUrl(listing.website) && (
+        <FacebookPosts pageUrl={listing.website} pageName={listing.title} />
+      )}
       <SourceBlock listing={listing} />
 
       <div className="flex justify-end border-t pt-2">
@@ -167,7 +178,7 @@ function BusinessDetails({ business, now }: { business: Business; now: Date }) {
       {business.hours ? (
         <section aria-label="Operating hours" className="space-y-1.5">
           <h3 className="text-sm font-semibold">Operating hours</h3>
-          <HoursTable hours={business.hours} now={now} verified={business.hoursVerified} />
+          <HoursTable hours={business.hours} now={now} verified={business.hoursVerified} fromOsm={business.hoursSource === "osm"} />
         </section>
       ) : (
         <p className="text-sm text-muted-foreground">Operating hours have not been listed.</p>

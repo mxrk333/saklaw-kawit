@@ -2,6 +2,8 @@ export type CategoryId =
   | "all"
   | "places"
   | "food"
+  | "stay"
+  | "attractions"
   | "health"
   | "shopping"
   | "government"
@@ -86,6 +88,8 @@ export interface Business extends BaseEntity {
   /** Hours are only used for open/closed status when `hoursVerified` is true. */
   hours?: WeeklyHours;
   hoursVerified: boolean;
+  /** Where unconfirmed `hours` came from. Open/closed is shown for them, labelled, because they may be out of date. */
+  hoursSource?: "osm";
   lastVerifiedAt?: string;
   recommendations: readonly Recommendation[];
 }
@@ -140,6 +144,8 @@ export interface SearchResult {
   location?: MapLocation;
   /** Computed at search time; undefined when no verified hours exist. */
   openNow?: boolean;
+  /** The words that actually matched this listing (including synonyms), for display. */
+  matchedOn: string[];
 }
 
 export type SortMode = "relevance" | "recent";

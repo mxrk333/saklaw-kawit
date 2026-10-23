@@ -22,6 +22,8 @@ const MapView = dynamic(() => import("./map-view").then((m) => m.MapView), {
 type MapPanelProps = Omit<MapViewProps, "ref" | "config" | "basemap" | "userLocation" | "follow" | "onFollowEnd"> & {
   /** Where the recenter control flies to; falls back to the Kawit default view. */
   recenterTarget: Coordinates | null;
+  /** Say so when there are results but none can be pinned (not when there are no results at all). */
+  explainMissingLocations?: boolean;
 };
 
 const LEGEND = [
@@ -33,7 +35,7 @@ const LEGEND = [
 const controlClass =
   "grid size-11 place-items-center lg:size-9 rounded-lg border bg-card text-foreground shadow-sm hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none";
 
-export function MapPanel({ recenterTarget, ...viewProps }: MapPanelProps) {
+export function MapPanel({ recenterTarget, explainMissingLocations = false, ...viewProps }: MapPanelProps) {
   const { topPadding } = viewProps;
   const mapRef = useRef<MapViewHandle>(null);
   const config = useMemo(() => getMapConfig(), []);
@@ -150,7 +152,7 @@ export function MapPanel({ recenterTarget, ...viewProps }: MapPanelProps) {
         </button>
       </div>
 
-      {viewProps.locations.length === 0 && (
+      {explainMissingLocations && viewProps.locations.length === 0 && (
         <p
           role="status"
           className="absolute left-1/2 max-w-[80%] -translate-x-1/2 rounded-lg border bg-card/95 px-3 py-1.5 text-center text-xs text-muted-foreground shadow-sm"

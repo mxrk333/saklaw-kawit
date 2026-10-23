@@ -5,13 +5,16 @@ import { MapPanel } from "@/components/map/map-panel";
 import { ListingDetails } from "@/components/places/listing-details";
 import { CategoryBar } from "@/components/search/category-bar";
 import { FilterBar } from "@/components/search/filter-bar";
+import { GoogleMapsLink } from "@/components/search/google-maps-link";
+import { KeywordChips } from "@/components/search/keyword-chips";
+import { QueryNote } from "@/components/search/query-note";
 import { ResultList } from "@/components/search/result-list";
 import { SearchBar } from "@/components/search/search-bar";
 import { useDirections } from "@/hooks/use-directions";
 import { useListings } from "@/hooks/use-listings";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { useNow } from "@/hooks/use-now";
-import { searchListings } from "@/lib/search/engine";
+import { countByCategory, searchListings } from "@/lib/search/engine";
 import { getSuggestions } from "@/lib/search/suggestions";
 import type { CategoryId, MapLocation, SortMode } from "@/types";
 import { BottomSheet, SHEET_PEEK_PX, type SheetSnap } from "./bottom-sheet";
@@ -51,6 +54,7 @@ export function ExplorerShell({ initialNow, initialQuery, initialCategory, initi
     () => searchListings(listings, { query, category, openNowOnly, sort }, now),
     [listings, query, category, openNowOnly, sort, now],
   );
+  const categoryCounts = useMemo(() => countByCategory(listings, now), [listings, now]);
   const mapLocations = useMemo(
     () => results.flatMap((r) => (r.location ? [r.location] : [])) satisfies MapLocation[],
     [results],
@@ -89,7 +93,7 @@ export function ExplorerShell({ initialNow, initialQuery, initialCategory, initi
   const searchControls = (
     <>
       <SearchBar value={query} suggestions={suggestions} onChange={setQuery} />
-      <CategoryBar value={category} onChange={setCategory} />
+      <CategoryBar value={category} counts={loading ? undefined : categoryCounts} onChange={setCategory} />
     </>
   );
 
@@ -110,16 +114,22 @@ export function ExplorerShell({ initialNow, initialQuery, initialCategory, initi
   );
 
   const resultList = (
-    <ResultList
+    <div className="space-y-3">
+      {query.trim() ? <QueryNote query={query} /> : <KeywordChips onPick={setQuery} />}
+      <ResultList
       results={results}
       loading={loading}
       error={error}
       selectedKey={selectedKey}
+      category={category}
+      hasQuery={query.trim().length > 0}
       now={now}
       onSelect={select}
       onClearFilters={clearAll}
       onRetry={reload}
-    />
+      />
+      {!loading && !error && <GoogleMapsLink query={query} />}
+    </div>
   );
 
   const sheetPadding = snap === "half" ? Math.round(innerHeight * 0.4) : SHEET_PEEK_PX;
@@ -137,6 +147,7 @@ export function ExplorerShell({ initialNow, initialQuery, initialCategory, initi
       topPadding={isDesktop ? 0 : MOBILE_TOP_INSET_PX}
       bottomPadding={isDesktop ? 0 : sheetPadding}
       recenterTarget={focusPoint ?? directions.origin?.coordinates ?? null}
+      explainMissingLocations={results.length > 0}
     />
   );
 

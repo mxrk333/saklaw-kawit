@@ -4,6 +4,8 @@ export const CATEGORIES: readonly Category[] = [
   { id: "all", label: "All", icon: "LayoutGrid", hint: "everything" },
   { id: "places", label: "Places & Services", icon: "MapPin", hint: "services" },
   { id: "food", label: "Food & Restaurants", icon: "Utensils", hint: "restaurants" },
+  { id: "stay", label: "Where to Stay", icon: "BedDouble", hint: "hotels and resorts" },
+  { id: "attractions", label: "Tourist Spots", icon: "Camera", hint: "landmarks and museums" },
   { id: "health", label: "Health & Dental", icon: "Stethoscope", hint: "dentists and clinics" },
   { id: "shopping", label: "Shopping", icon: "ShoppingBag", hint: "groceries and pharmacies" },
   { id: "government", label: "Government", icon: "Landmark", hint: "offices and ordinances" },

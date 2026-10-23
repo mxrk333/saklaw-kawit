@@ -2,7 +2,7 @@ import { describeWeek } from "@/lib/utils/hours";
 import { cn } from "@/lib/utils";
 import type { WeeklyHours } from "@/types";
 
-export function HoursTable({ hours, now, verified }: { hours: WeeklyHours; now: Date; verified: boolean }) {
+export function HoursTable({ hours, now, verified, fromOsm = false }: { hours: WeeklyHours; now: Date; verified: boolean; fromOsm?: boolean }) {
   return (
     <div>
       <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
@@ -13,7 +13,11 @@ export function HoursTable({ hours, now, verified }: { hours: WeeklyHours; now: 
           </div>
         ))}
       </dl>
-      {!verified && <p className="mt-2 text-xs text-muted-foreground">These hours have not been confirmed. Call ahead to be sure.</p>}
+      {!verified && (
+        <p className="mt-2 text-xs text-muted-foreground">
+          {fromOsm ? "These hours come from OpenStreetMap and may be out of date." : "These hours have not been confirmed."} Call ahead to be sure.
+        </p>
+      )}
     </div>
   );
 }

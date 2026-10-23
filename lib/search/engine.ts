@@ -1,16 +1,14 @@
 import { findArea } from "@/data/barangay-areas";
 import { CATEGORY_LABELS } from "@/data/categories";
-import type { Business, Listing, MapLocation, SearchFilters, SearchResult } from "@/types";
+import type { Business, CategoryId, Listing, MapLocation, SearchFilters, SearchResult } from "@/types";
+import { CATEGORIES } from "@/data/categories";
 import { isOpenNow } from "@/lib/utils/hours";
 import { isCurrentListing, resolveVerification } from "@/lib/utils/verification";
+import { normalize } from "./normalize";
+import { interpretQuery } from "./query";
 import { expandTerm } from "./synonyms";
 
-export function normalize(text: string): string {
-  return text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "");
-}
+export { normalize };
 
 export function tokenize(text: string): string[] {
   return normalize(text)
@@ -57,31 +55,42 @@ function hasPrefix(words: readonly string[], term: string): boolean {
   return words.some((w) => w.startsWith(term));
 }
 
-/** Best score any synonym earns for one query token; 0 means no match. */
-function scoreToken(haystack: Haystack, token: string): number {
-  let best = 0;
+interface TokenMatch {
+  score: number;
+  /** The term (the typed word or one of its synonyms) that matched best. */
+  term: string;
+}
+
+/** Best score any synonym earns for one query token; score 0 means no match. */
+function scoreToken(haystack: Haystack, token: string): TokenMatch {
+  let best: TokenMatch = { score: 0, term: token };
+  const consider = (score: number, term: string) => {
+    if (score > best.score) best = { score, term };
+  };
   for (const term of expandTerm(token)) {
     const exact = term === token ? 1 : 0.7;
-    if (hasPrefix(haystack.title, term)) best = Math.max(best, 6 * exact);
-    if (hasPrefix(haystack.tags, term)) best = Math.max(best, 5 * exact);
+    if (hasPrefix(haystack.title, term)) consider(6 * exact, term);
+    if (hasPrefix(haystack.tags, term)) consider(5 * exact, term);
     // Category/topic text only counts for what was actually typed, so a general
     // clinic in "Health & Dental" is not returned for "dentist" via a synonym.
-    if (term === token && hasPrefix(haystack.context, term)) best = Math.max(best, 3);
-    if (hasPrefix(haystack.description, term)) best = Math.max(best, 1.5 * exact);
+    if (term === token && hasPrefix(haystack.context, term)) consider(3, term);
+    if (hasPrefix(haystack.description, term)) consider(1.5 * exact, term);
   }
   return best;
 }
 
-function scoreListing(listing: Listing, tokens: readonly string[]): number {
-  if (tokens.length === 0) return 1;
+function scoreListing(listing: Listing, tokens: readonly string[]): { score: number; matchedOn: string[] } {
+  if (tokens.length === 0) return { score: 1, matchedOn: [] };
   const haystack = buildHaystack(listing);
   let total = 0;
+  const matchedOn: string[] = [];
   for (const token of tokens) {
-    const score = scoreToken(haystack, token);
-    if (score === 0) return 0; // every typed word must match something
-    total += score;
+    const match = scoreToken(haystack, token);
+    if (match.score === 0) return { score: 0, matchedOn: [] }; // every typed word must match something
+    total += match.score;
+    if (!matchedOn.includes(match.term)) matchedOn.push(match.term);
   }
-  return total;
+  return { score: total, matchedOn };
 }
 
 function trustBoost(listing: Listing): number {
@@ -97,18 +106,44 @@ function trustBoost(listing: Listing): number {
   }
 }
 
+/**
+ * Category membership. "Places & Services" is the umbrella for every place and
+ * service (stores, sari-sari, water stations, offices...), and "Barangay
+ * Updates" includes each barangay's page, which is where its updates are posted.
+ */
+export function matchesCategory(listing: Listing, category: CategoryId): boolean {
+  switch (category) {
+    case "all":
+      return true;
+    case "places":
+      return listing.kind === "business";
+    case "barangay":
+      return listing.category === "barangay" || (listing.kind === "business" && Boolean(listing.areaId));
+    default:
+      return listing.category === category;
+  }
+}
+
+/** How many current listings each category chip will show. */
+export function countByCategory(listings: readonly Listing[], now: Date): Record<CategoryId, number> {
+  const current = listings.filter((listing) => isCurrentListing(listing, now));
+  return Object.fromEntries(
+    CATEGORIES.map((category) => [category.id, current.filter((l) => matchesCategory(l, category.id)).length]),
+  ) as Record<CategoryId, number>;
+}
+
 export function searchListings(listings: readonly Listing[], filters: SearchFilters, now: Date): SearchResult[] {
-  const tokens = tokenize(filters.query);
+  const { tokens } = interpretQuery(filters.query);
   const results: SearchResult[] = [];
 
   for (const listing of listings) {
     if (!isCurrentListing(listing, now)) continue;
-    if (filters.category !== "all" && listing.category !== filters.category) continue;
+    if (!matchesCategory(listing, filters.category)) continue;
 
     const openNow = listing.kind === "business" ? isOpenNow(listing as Business, now) : undefined;
     if (filters.openNowOnly && openNow !== true) continue;
 
-    const score = scoreListing(listing, tokens);
+    const { score, matchedOn } = scoreListing(listing, tokens);
     if (score === 0) continue;
 
     results.push({
@@ -118,6 +153,7 @@ export function searchListings(listings: readonly Listing[], filters: SearchFilt
       listing,
       location: toMapLocation(listing),
       openNow,
+      matchedOn,
     });
   }
 

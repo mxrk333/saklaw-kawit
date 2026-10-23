@@ -35,10 +35,12 @@ function isWithin(range: TimeRange, minutes: number): boolean {
 }
 
 /**
- * Returns undefined when we cannot honestly say (no hours, or hours not verified).
+ * Returns undefined when we cannot honestly say: no hours at all, or hours with
+ * no known source. Hours confirmed by us or taken from OpenStreetMap count; the
+ * UI labels the latter as possibly out of date.
  */
 export function isOpenNow(business: Business, now: Date): boolean | undefined {
-  if (!business.hours || !business.hoursVerified) return undefined;
+  if (!business.hours || !(business.hoursVerified || business.hoursSource)) return undefined;
   const { day, minutes } = getManilaClock(now);
   return business.hours[day].some((range) => isWithin(range, minutes));
 }

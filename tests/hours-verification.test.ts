@@ -17,9 +17,15 @@ describe("isOpenNow", () => {
     expect(isOpenNow(dental, sunday10am)).toBe(false);
   });
 
-  it("refuses to answer when hours are unconfirmed or missing", () => {
+  it("refuses to answer when hours are missing or have no known source", () => {
     expect(isOpenNow({ ...dental, hoursVerified: false }, monday10am)).toBeUndefined();
     expect(isOpenNow({ ...dental, hours: undefined }, monday10am)).toBeUndefined();
+  });
+
+  it("uses OpenStreetMap hours, which the UI labels as possibly out of date", () => {
+    const osm = { ...dental, hoursVerified: false, hoursSource: "osm" as const };
+    expect(isOpenNow(osm, monday10am)).toBe(true);
+    expect(isOpenNow(osm, monday8pm)).toBe(false);
   });
 });
 

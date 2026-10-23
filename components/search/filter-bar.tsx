@@ -21,7 +21,7 @@ export function FilterBar({ openNowOnly, sort, count, onOpenNowChange, onSortCha
           type="button"
           aria-pressed={openNowOnly}
           onClick={() => onOpenNowChange(!openNowOnly)}
-          title="Only businesses with confirmed hours that are open right now"
+          title="Only places with known opening hours (confirmed, or from OpenStreetMap) that are open right now"
           className={cn(
             "inline-flex h-9 items-center gap-1 rounded-full lg:h-7 border px-2.5 text-xs font-medium focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
             openNowOnly ? "border-primary bg-primary/10 text-primary" : "bg-card hover:bg-muted",

@@ -5,10 +5,12 @@ import type { CategoryId } from "@/types";
 
 interface CategoryBarProps {
   value: CategoryId;
+  /** Number of listings per category; empty ones are dimmed but still open an explanation. */
+  counts?: Partial<Record<CategoryId, number>>;
   onChange: (category: CategoryId) => void;
 }
 
-export function CategoryBar({ value, onChange }: CategoryBarProps) {
+export function CategoryBar({ value, counts, onChange }: CategoryBarProps) {
   return (
     <div
       role="group"
@@ -17,6 +19,8 @@ export function CategoryBar({ value, onChange }: CategoryBarProps) {
     >
       {CATEGORIES.map((category) => {
         const active = category.id === value;
+        const count = counts?.[category.id];
+        const empty = count === 0;
         return (
           <button
             key={category.id}
@@ -28,10 +32,14 @@ export function CategoryBar({ value, onChange }: CategoryBarProps) {
               active
                 ? "border-primary bg-primary text-primary-foreground"
                 : "bg-card text-foreground hover:bg-muted",
+              empty && !active && "text-muted-foreground",
             )}
           >
             <CategoryIcon category={category.id} className="size-3.5" />
             {category.label}
+            {count !== undefined && category.id !== "all" && (
+              <span className={cn("text-[0.7rem] tabular-nums", active ? "opacity-80" : "text-muted-foreground")}>{count}</span>
+            )}
           </button>
         );
       })}
