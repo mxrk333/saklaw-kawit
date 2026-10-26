@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T06:57:51.207Z",
+  "generatedAt": "2026-10-26T13:18:39.233Z",
   "places": [
     {
       "id": "commonbrew-signature-lancaster-kawit",
@@ -205,6 +205,73 @@
       "barangay": "Batong Dalig",
       "phone": "(046) 476 1888",
       "note": "Delivery available. Open until 9 PM. Location from Plus Code CVMX+3X."
+    },
+    {
+      "id": "las-tiendas",
+      "name": "Las Tiendas",
+      "category": "food",
+      "tags": [
+        "food court",
+        "food court",
+        "night market",
+        "las tiendas",
+        "christmas",
+        "enchanted christmas"
+      ],
+      "type": "food court",
+      "geo": {
+        "lat": 14.446463,
+        "lng": 120.906859
+      },
+      "address": "Aguinaldo Park, Kawit, Cavite",
+      "barangay": "Kaingen",
+      "website": "https://www.facebook.com/lastiendaskawit/",
+      "source": "https://www.facebook.com/lastiendaskawit/",
+      "hours": [
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ],
+        [
+          {
+            "open": "16:00",
+            "close": "24:00"
+          }
+        ]
+      ],
+      "note": "Night market and food court in Aguinaldo Park, across from the Aguinaldo Shrine. Dine-in and takeout. Open daily 4 PM to 12 AM. Location from Plus Code CWW4+HPQ."
     }
   ]
 }

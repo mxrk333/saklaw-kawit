@@ -5,12 +5,13 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useImperativeHandle, useRef, useState, type Ref } from "react";
 import { DEFAULT_VIEW, FOCUS_ZOOM, type Basemap, type MapConfig } from "@/lib/map/config";
 import { barangayListingId, findArea } from "@/data/barangay-areas";
-import { routeFeature, selectedAreaOutline, toFeatureCollection, userFeatureCollection } from "@/lib/map/geojson";
+import { liveFeatureCollection, routeFeature, selectedAreaOutline, toFeatureCollection, userFeatureCollection } from "@/lib/map/geojson";
 import { KAWIT_BOUNDS, KAWIT_MAX_BOUNDS } from "@/lib/map/kawit";
 import {
   AREA_FILL_LAYER,
   AREA_SELECTED_SOURCE,
   CLUSTER_LAYER,
+  LIVE_SOURCE,
   LOCATIONS_SOURCE,
   POINT_LAYER,
   ROUTE_SOURCE,
@@ -245,6 +246,7 @@ export function MapView(props: MapViewProps) {
     const map = mapRef.current;
     if (!map || !ready) return;
     setSource(map, LOCATIONS_SOURCE, toFeatureCollection(locations));
+    setSource(map, LIVE_SOURCE, liveFeatureCollection(locations));
   }, [locations, ready]);
 
   // Frame results (again when the sheet resizes) unless something is selected.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T06:57:51.203Z",
+  "generatedAt": "2026-10-26T13:18:39.230Z",
   "sources": [
     {
       "id": "balsahan-bisita",
@@ -44,7 +44,11 @@
       "name": "Kaingen",
       "urls": [
         "https://www.facebook.com/barangay.kaingen12"
-      ]
+      ],
+      "geo": {
+        "lat": 14.446663,
+        "lng": 120.906359
+      }
     },
     {
       "id": "magdalo-putol",
@@ -121,7 +125,8 @@
       "id": "toclong",
       "name": "Toclong",
       "urls": [
-        "https://www.facebook.com/profile.php?id=61590347554958"
+        "https://www.facebook.com/profile.php?id=61590347554958",
+        "https://maps.app.goo.gl/jWTyb4Y5bah4H8eGA"
       ]
     }
   ]

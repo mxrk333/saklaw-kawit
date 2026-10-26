@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CATEGORY_LABELS } from "@/data/categories";
 import { CategoryIcon } from "@/components/listing/category-icon";
 import { FreshnessNote } from "@/components/listing/freshness-note";
+import { LiveBadge } from "@/components/listing/live-badge";
 import { OpenStatus } from "@/components/listing/open-status";
 import { DemoBadge, VerificationBadge } from "@/components/listing/verification-badge";
 import { cn } from "@/lib/utils";
@@ -37,6 +38,7 @@ export function ResultCardContent({
         <span className="flex flex-wrap items-center gap-1.5">
           <VerificationBadge listing={listing} />
           {listing.kind === "business" && <OpenStatus business={listing} openNow={openNow} />}
+          {listing.kind === "event" && <LiveBadge event={listing} now={now} />}
           {listing.isDemo && <DemoBadge />}
         </span>
         {listing.kind === "business" && listing.phone && (

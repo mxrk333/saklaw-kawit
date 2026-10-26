@@ -90,7 +90,7 @@ export interface Business extends BaseEntity {
   hours?: WeeklyHours;
   hoursVerified: boolean;
   /** Where unconfirmed `hours` came from. Open/closed is shown for them, labelled, because they may be out of date. */
-  hoursSource?: "osm";
+  hoursSource?: "osm" | "community";
   lastVerifiedAt?: string;
   recommendations: readonly Recommendation[];
 }
@@ -117,6 +117,8 @@ export interface CommunityEvent extends BaseEntity {
   endsAt?: string;
   venue: string;
   coordinates: Coordinates;
+  /** Hours it runs each day (Manila time). When set, "live" only counts inside them. */
+  dailyHours?: WeeklyHours;
 }
 
 export type Listing = Business | Announcement | CommunityEvent;
@@ -134,6 +136,8 @@ export interface MapLocation {
   precision: "exact" | "area";
   /** Barangay area to outline on the map when this location is selected. */
   areaId?: string;
+  /** An event that is happening right now; the map highlights it. */
+  live?: boolean;
 }
 
 export interface SearchResult {

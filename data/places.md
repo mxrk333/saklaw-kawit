@@ -13,6 +13,7 @@ Format (each line after the heading is optional except geo, which puts it on the
     address: Street, Barangay, Kawit
     barangay: Poblacion
     phone: 0917 000 0000
+    hours: daily 16:00-24:00   (optional; 24-hour Manila time, drives Open now. Days: daily, mon, mon-fri, sun closed)
     website: https://...
     source: https://maps.app.goo.gl/...   (where you found it)
     note: anything worth knowing
@@ -154,3 +155,15 @@ address: Centennial Road, Batong Dalig, Kawit, Cavite (in Evo City by Ayala Land
 barangay: Batong Dalig
 phone: (046) 476 1888
 note: Delivery available. Open until 9 PM. Location from Plus Code CVMX+3X.
+
+# Las Tiendas
+category: food
+type: food court
+tags: food court, night market, las tiendas, christmas, enchanted christmas
+geo: 14.446463, 120.906859
+address: Aguinaldo Park, Kawit, Cavite
+barangay: Kaingen
+website: https://www.facebook.com/lastiendaskawit/
+source: https://www.facebook.com/lastiendaskawit/
+hours: daily 16:00-24:00
+note: Night market and food court in Aguinaldo Park, across from the Aguinaldo Shrine. Dine-in and takeout. Open daily 4 PM to 12 AM. Location from Plus Code CWW4+HPQ.

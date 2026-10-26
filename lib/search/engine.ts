@@ -2,6 +2,7 @@ import { findArea } from "@/data/barangay-areas";
 import { CATEGORY_LABELS } from "@/data/categories";
 import type { Business, CategoryId, Listing, MapLocation, SearchFilters, SearchResult } from "@/types";
 import { CATEGORIES } from "@/data/categories";
+import { isEventLive } from "@/lib/utils/events";
 import { isOpenNow } from "@/lib/utils/hours";
 import { isCurrentListing, resolveVerification } from "@/lib/utils/verification";
 import { normalize } from "./normalize";
@@ -16,7 +17,7 @@ export function tokenize(text: string): string[] {
     .filter(Boolean);
 }
 
-export function toMapLocation(listing: Listing): MapLocation | undefined {
+export function toMapLocation(listing: Listing, now: Date = new Date()): MapLocation | undefined {
   const areaId = listing.kind === "business" ? listing.areaId : undefined;
   const exact = listing.coordinates;
   const coordinates = exact ?? findArea(areaId)?.center;
@@ -31,6 +32,7 @@ export function toMapLocation(listing: Listing): MapLocation | undefined {
     coordinates,
     precision: exact ? "exact" : "area",
     areaId,
+    live: listing.kind === "event" ? isEventLive(listing, now) : undefined,
   };
 }
 
@@ -162,7 +164,7 @@ export function searchListings(listings: readonly Listing[], filters: SearchFilt
       type: listing.kind,
       score: score + trustBoost(listing),
       listing,
-      location: toMapLocation(listing),
+      location: toMapLocation(listing, now),
       openNow,
       matchedOn,
     });

@@ -178,7 +178,7 @@ function BusinessDetails({ business, now }: { business: Business; now: Date }) {
       {business.hours ? (
         <section aria-label="Operating hours" className="space-y-1.5">
           <h3 className="text-sm font-semibold">Operating hours</h3>
-          <HoursTable hours={business.hours} now={now} verified={business.hoursVerified} fromOsm={business.hoursSource === "osm"} />
+          <HoursTable hours={business.hours} now={now} verified={business.hoursVerified} source={business.hoursSource} />
         </section>
       ) : (
         <p className="text-sm text-muted-foreground">Operating hours have not been listed.</p>

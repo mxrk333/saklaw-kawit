@@ -1,4 +1,4 @@
-import type { Business, CategoryId } from "@/types";
+import type { Business, CategoryId, WeeklyHours } from "@/types";
 import raw from "./generated/curated-places.json";
 
 /** Shape of data/generated/curated-places.json, produced from data/places.md. */
@@ -9,6 +9,7 @@ interface CuratedPlace {
   type?: string;
   tags: string[];
   geo?: { lat: number; lng: number };
+  hours?: WeeklyHours;
   address?: string;
   barangay?: string;
   phone?: string;
@@ -37,7 +38,9 @@ export const CURATED_PLACES: readonly Business[] = places.map((place) => ({
   phone: place.phone,
   website: place.website,
   images: [],
+  hours: place.hours,
   hoursVerified: false,
+  hoursSource: place.hours ? "community" : undefined,
   recommendations: [],
   tags: [...place.tags, place.name.toLowerCase()],
   verification: "community",

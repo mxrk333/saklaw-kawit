@@ -5,6 +5,7 @@ import { kawitMask, kawitOutline } from "./kawit";
 
 export const LOCATIONS_SOURCE = "saklaw-locations";
 export const SELECTED_SOURCE = "saklaw-selected";
+export const LIVE_SOURCE = "saklaw-live";
 export const ROUTE_SOURCE = "saklaw-route";
 export const USER_SOURCE = "saklaw-user";
 export const AREA_SELECTED_SOURCE = "saklaw-area-selected";
@@ -18,6 +19,7 @@ const SATELLITE_LAYER = "saklaw-satellite";
 const LABEL_FONT = ["Noto Sans Regular"];
 
 const GREEN = "#15803d";
+const LIVE_RED = "#e11d48";
 
 /**
  * Turns on 3D terrain, soft hillshading and a sky. The hillshade is inserted
@@ -166,6 +168,7 @@ export function addDataLayers(map: maplibregl.Map): void {
     clusterMaxZoom: 13,
   });
   map.addSource(SELECTED_SOURCE, { type: "geojson", data: toFeatureCollection([]) });
+  map.addSource(LIVE_SOURCE, { type: "geojson", data: toFeatureCollection([]) });
   map.addSource(ROUTE_SOURCE, { type: "geojson", data: routeFeature(null) });
   map.addSource(USER_SOURCE, { type: "geojson", data: userFeatureCollection(null) });
 
@@ -202,6 +205,28 @@ export function addDataLayers(map: maplibregl.Map): void {
       "circle-color": "#2563eb",
       "circle-stroke-color": "#ffffff",
       "circle-stroke-width": 3,
+      "circle-pitch-alignment": "map",
+    },
+  });
+
+  // Events happening right now: soft red rings under everything else, always visible.
+  map.addLayer({
+    id: "saklaw-live-halo-outer",
+    type: "circle",
+    source: LIVE_SOURCE,
+    paint: { "circle-color": LIVE_RED, "circle-radius": 30, "circle-opacity": 0.14, "circle-pitch-alignment": "map" },
+  });
+  map.addLayer({
+    id: "saklaw-live-halo-inner",
+    type: "circle",
+    source: LIVE_SOURCE,
+    paint: {
+      "circle-color": LIVE_RED,
+      "circle-radius": 18,
+      "circle-opacity": 0.28,
+      "circle-stroke-color": LIVE_RED,
+      "circle-stroke-width": 1.5,
+      "circle-stroke-opacity": 0.7,
       "circle-pitch-alignment": "map",
     },
   });
@@ -266,6 +291,22 @@ export function addDataLayers(map: maplibregl.Map): void {
       "text-max-width": 8,
     },
     paint: { "text-color": "#111827", "text-halo-color": "#ffffff", "text-halo-width": 1.6 },
+  });
+  // "LIVE" tag above events that are happening now.
+  map.addLayer({
+    id: "saklaw-live-tag",
+    type: "symbol",
+    source: LIVE_SOURCE,
+    layout: {
+      "text-field": "● LIVE",
+      "text-font": LABEL_FONT,
+      "text-size": 12,
+      "text-anchor": "bottom",
+      "text-offset": [0, -1.4],
+      "text-allow-overlap": true,
+      "text-ignore-placement": true,
+    },
+    paint: { "text-color": "#ffffff", "text-halo-color": LIVE_RED, "text-halo-width": 4 },
   });
   map.addLayer({
     id: "saklaw-selected-halo",

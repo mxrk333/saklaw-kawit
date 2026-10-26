@@ -17,6 +17,7 @@ https://www.facebook.com/profile.php?id=61577596696199
 
 # Kaingen 
 https://www.facebook.com/barangay.kaingen12
+geo: 14.446663, 120.906359
 
 # Magdalo-putol
 https://www.facebook.com/brgymagdalopotol/ 
@@ -50,3 +51,6 @@ https://www.facebook.com/barangay.taboniii
 
 # Toclong 
 https://www.facebook.com/profile.php?id=61590347554958
+
+
+https://maps.app.goo.gl/jWTyb4Y5bah4H8eGA

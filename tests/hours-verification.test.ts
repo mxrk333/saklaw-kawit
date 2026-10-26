@@ -29,6 +29,24 @@ describe("isOpenNow", () => {
   });
 });
 
+describe("night-market hours (4 PM to 12 AM)", () => {
+  const nightly = Array.from({ length: 7 }, () => [{ open: "16:00", close: "24:00" }]) as unknown as typeof dental.hours;
+  const market = { ...dental, hours: nightly, hoursVerified: false, hoursSource: "community" as const };
+  const at = (time: string) => new Date(`2026-10-26T${time}:00+08:00`);
+
+  it("is closed before 4 PM and open from 4 PM until midnight", () => {
+    expect(isOpenNow(market, at("00:00"))).toBe(false);
+    expect(isOpenNow(market, at("15:59"))).toBe(false);
+    expect(isOpenNow(market, at("16:00"))).toBe(true);
+    expect(isOpenNow(market, at("23:59"))).toBe(true);
+  });
+
+  it("uses Manila time, not the viewer's clock", () => {
+    expect(isOpenNow(market, new Date("2026-10-26T08:00:00Z"))).toBe(true); // 4 PM in Manila
+    expect(isOpenNow(market, new Date("2026-10-26T07:59:00Z"))).toBe(false);
+  });
+});
+
 describe("resolveVerification", () => {
   it("downgrades 'official' when the source is not verified", () => {
     expect(resolveVerification("official", { name: "Someone" })).toBe("unverified");

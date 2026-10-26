@@ -14,6 +14,7 @@ export interface LocationProperties {
   type: ContentType;
   title: string;
   precision: "exact" | "area";
+  live: boolean;
 }
 
 export function toFeatureCollection(locations: readonly MapLocation[]): FeatureCollection<Point, LocationProperties> {
@@ -22,9 +23,14 @@ export function toFeatureCollection(locations: readonly MapLocation[]): FeatureC
     features: locations.map((l) => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: [l.coordinates.lng, l.coordinates.lat] },
-      properties: { key: l.key, type: l.type, title: l.title, precision: l.precision },
+      properties: { key: l.key, type: l.type, title: l.title, precision: l.precision, live: l.live === true },
     })),
   };
+}
+
+/** Only the events happening right now, kept out of the clustered source so they never hide inside a cluster. */
+export function liveFeatureCollection(locations: readonly MapLocation[]): FeatureCollection<Point, LocationProperties> {
+  return toFeatureCollection(locations.filter((l) => l.live));
 }
 
 export function routeFeature(line: [number, number][] | null): FeatureCollection<LineString> {
