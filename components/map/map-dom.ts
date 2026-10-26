@@ -12,7 +12,7 @@ export function buildPopupContent(location: MapLocation, onDirections: () => voi
     const dot = document.createElement("span");
     dot.className = "size-1.5 animate-pulse rounded-full bg-white";
     dot.setAttribute("aria-hidden", "true");
-    banner.append(dot, document.createTextNode(`HAPPENING NOW${/christmas/i.test(liveEvent.title) ? " · 🎄 Christmas" : ""}`));
+    banner.append(dot, document.createTextNode("HAPPENING NOW"));
     const event = document.createElement("p");
     event.className = "text-xs font-medium text-rose-700";
     event.textContent = liveEvent.title;
