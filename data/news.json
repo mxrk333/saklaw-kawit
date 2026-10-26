@@ -1,5 +1,15 @@
 {
-  "fetchedAt": "2026-10-26T13:23:51.313Z",
+  "fetchedAt": "2026-10-26T13:34:18.733Z",
   "source": "Google News RSS",
-  "items": []
+  "items": [
+    {
+      "id": "b5eb204f57",
+      "title": "TEST ONLY: Kawit festival headline, do not merge",
+      "link": "https://example.com/saklaw-test",
+      "source": "SAKLAW test",
+      "publishedAt": "2026-10-26T13:34:18.733Z",
+      "category": "events",
+      "topic": "announcement"
+    }
+  ]
 }
