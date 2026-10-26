@@ -28,6 +28,7 @@ import type { RouteResult } from "@/lib/map/routing";
 import type { UserLocation } from "@/hooks/use-user-location";
 import type { Coordinates, MapLocation } from "@/types";
 import { MapStatusOverlay, type MapStatus } from "./map-status-overlay";
+import { findLiveNear } from "@/lib/map/live";
 import { buildPopupContent, createOriginElement } from "./map-dom";
 
 export interface MapOrigin {
@@ -300,7 +301,7 @@ export function MapView(props: MapViewProps) {
     if (showPopup) {
       popupRef.current = new maplibregl.Popup({ offset: 18, closeButton: false, closeOnClick: false, maxWidth: "260px" })
         .setLngLat([selected.coordinates.lng, selected.coordinates.lat])
-        .setDOMContent(buildPopupContent(selected, () => latest.current.onRequestDirections(selected.key)))
+        .setDOMContent(buildPopupContent(selected, () => latest.current.onRequestDirections(selected.key), findLiveNear(selected, latest.current.locations)))
         .addTo(map);
     }
   }, [selectedKey, showPopup, bottomPadding, ready]);
