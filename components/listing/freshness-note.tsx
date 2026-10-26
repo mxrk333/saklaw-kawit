@@ -1,4 +1,4 @@
-import { Clock } from "lucide-react";
+import { Clock, Info } from "lucide-react";
 import { formatDate, formatRelative } from "@/lib/utils/format";
 import type { Listing } from "@/types";
 
@@ -6,8 +6,8 @@ function describe(listing: Listing, now: Date): string {
   switch (listing.kind) {
     case "business":
       return listing.lastVerifiedAt
-        ? `Last verified ${formatRelative(listing.lastVerifiedAt, now)}`
-        : `Not verified yet · updated ${formatRelative(listing.updatedAt, now)}`;
+        ? `Checked by the SAKLAW team ${formatRelative(listing.lastVerifiedAt, now)}`
+        : "Not checked by the SAKLAW team yet. Call ahead to be sure.";
     case "announcement":
       return listing.expiresAt
         ? `Published ${formatRelative(listing.publishedAt, now)} · valid until ${formatDate(listing.expiresAt)}`
@@ -18,9 +18,11 @@ function describe(listing: Listing, now: Date): string {
 }
 
 export function FreshnessNote({ listing, now }: { listing: Listing; now: Date }) {
+  const unchecked = listing.kind === "business" && !listing.lastVerifiedAt;
+  const Icon = unchecked ? Info : Clock;
   return (
     <p className="flex items-center gap-1 text-xs text-muted-foreground">
-      <Clock className="size-3" aria-hidden />
+      <Icon className="size-3 shrink-0" aria-hidden />
       {describe(listing, now)}
     </p>
   );
