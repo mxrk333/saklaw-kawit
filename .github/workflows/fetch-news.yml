@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+    inputs:
+      test:
+        description: "Add one fake headline to check that the pull request step works (close that pull request, do not merge)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -20,6 +25,8 @@ jobs:
         with:
           node-version: 22
       - name: Fetch and filter headlines
+        env:
+          NEWS_TEST: ${{ inputs.test && '1' || '0' }}
         run: node scripts/fetch-news.mjs
       - name: Open a pull request when something changed
         env:
@@ -39,6 +46,6 @@ jobs:
           git push --force origin "$branch"
           if [ -z "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number')" ]; then
             gh pr create --base main --head "$branch" \
-              --title "Review Kawit news headlines" \
+              --title "$([ "${{ inputs.test }}" = "true" ] && echo "[TEST] Do not merge: " )Review Kawit news headlines" \
               --body "Automated fetch. Check each headline in data/news.json: it should be about Kawit and must not be about crime or violence. Merge to publish, or close to discard."
           fi

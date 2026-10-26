@@ -27,6 +27,15 @@ function readExisting() {
 
 const now = new Date();
 const fetched = (await Promise.all(QUERIES.map(fetchFeed))).flat();
+// Pipeline check: NEWS_TEST=1 adds one obviously fake headline so a pull request opens. Never merge it.
+if (process.env.NEWS_TEST === "1") {
+  fetched.push({
+    title: "TEST ONLY: Kawit festival headline, do not merge - SAKLAW test",
+    link: "https://example.com/saklaw-test",
+    source: "SAKLAW test",
+    publishedAt: now.toISOString(),
+  });
+}
 // Earlier items are re-checked with today's rules, and drop out once they are too old.
 const items = selectItems([...fetched, ...readExisting()], now);
 writeFileSync(OUTPUT, `${JSON.stringify({ fetchedAt: now.toISOString(), source: "Google News RSS", items }, null, 2)}\n`);
