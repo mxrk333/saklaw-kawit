@@ -7,6 +7,7 @@ import { DirectionsPanel } from "@/components/directions/directions-panel";
 import { ReportDialog } from "@/components/contribute/report-dialog";
 import { CategoryIcon } from "@/components/listing/category-icon";
 import { FreshnessNote } from "@/components/listing/freshness-note";
+import { MarkdownText } from "@/components/listing/markdown-text";
 import { OpenStatus } from "@/components/listing/open-status";
 import { DemoBadge, VerificationBadge } from "@/components/listing/verification-badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -61,7 +62,7 @@ export function ListingDetails({ listing, now, openNow, directions, directionsOp
         </div>
         <div className="flex flex-wrap items-center gap-1.5">
           <VerificationBadge listing={listing} />
-          {listing.kind === "business" && <OpenStatus business={listing} openNow={openNow} />}
+          {listing.kind === "business" && <OpenStatus business={listing} openNow={openNow} now={now} />}
           {listing.isDemo && <DemoBadge />}
         </div>
         <FreshnessNote listing={listing} now={now} />
@@ -74,6 +75,7 @@ export function ListingDetails({ listing, now, openNow, directions, directionsOp
       )}
 
       <p className="text-sm leading-relaxed">{listing.description}</p>
+      {listing.kind === "business" && listing.about && <MarkdownText source={listing.about} />}
 
       {listing.tags.includes("emergency") && (
         <p role="note" className="rounded-lg bg-rose-50 p-2.5 text-xs text-rose-900 dark:bg-rose-950/40 dark:text-rose-200">

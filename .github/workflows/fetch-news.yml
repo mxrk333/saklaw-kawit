@@ -1,0 +1,44 @@
+name: Fetch Kawit news
+
+# Looks for recent, safe Kawit headlines (no crime or violence) and opens a pull request.
+# Merging that pull request is the review step: nothing reaches the site without it.
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch and filter headlines
+        run: node scripts/fetch-news.mjs
+      - name: Open a pull request when something changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # fetchedAt changes every run, so compare only the items.
+          if [ "$(git show HEAD:data/news.json | jq -c .items)" = "$(jq -c .items data/news.json)" ]; then
+            echo "No new or removed headlines."
+            exit 0
+          fi
+          branch="news/auto-update"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add data/news.json
+          git commit -m "chore: update Kawit news headlines"
+          git push --force origin "$branch"
+          if [ -z "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number')" ]; then
+            gh pr create --base main --head "$branch" \
+              --title "Review Kawit news headlines" \
+              --body "Automated fetch. Check each headline in data/news.json: it should be about Kawit and must not be about crime or violence. Merge to publish, or close to discard."
+          fi

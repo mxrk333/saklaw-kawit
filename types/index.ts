@@ -91,6 +91,8 @@ export interface Business extends BaseEntity {
   hoursVerified: boolean;
   /** Where unconfirmed `hours` came from. Open/closed is shown for them, labelled, because they may be out of date. */
   hoursSource?: "osm" | "community";
+  /** Longer write-up in simple markdown (## headings, - bullets, **bold**), shown on the full listing only. */
+  about?: string;
   lastVerifiedAt?: string;
   recommendations: readonly Recommendation[];
 }

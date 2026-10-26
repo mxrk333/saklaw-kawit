@@ -9,6 +9,10 @@
  *   phone: 0917 000 0000
  *   hours: daily 16:00-24:00   <- optional; 24-hour Manila time, drives "Open now"
  *   source: https://maps.app.goo.gl/...   <- where you found it (optional)
+ *   credit: Las Tiendas Kawit on Facebook   <- name shown for the source (optional)
+ *   details: from source   <- the text comes from that source, so skip the "not confirmed" line (optional)
+ *
+ *   about: ## What to expect   <- markdown; continue it on the next lines, each starting with "+" ("+" alone = blank line)
  *
  * Indented lines (4 spaces or a tab) and text before the first "# heading" are
  * documentation and are ignored. Anything
@@ -16,7 +20,7 @@
  */
 
 export const PLACE_CATEGORIES = ["places", "shopping", "food", "health", "stay", "attractions", "schools", "government"];
-const KEYS = new Set(["category", "type", "tags", "geo", "address", "barangay", "phone", "website", "source", "note", "hours"]);
+const KEYS = new Set(["category", "type", "tags", "geo", "address", "barangay", "phone", "website", "source", "note", "hours", "credit", "details", "about"]);
 const GEO = /^(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)$/;
 
 const DAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
@@ -71,6 +75,7 @@ export function parsePlaces(markdown) {
   const places = [];
   const warnings = [];
   let current = null;
+  let lastKey = null;
 
   markdown.split(/\r?\n/).forEach((line, index) => {
     const text = line.trim();
@@ -82,10 +87,17 @@ export function parsePlaces(markdown) {
     if (heading) {
       const name = heading[1].trim();
       current = { id: slug(name), name, category: "places", tags: [] };
+      lastKey = null;
       places.push(current);
       return;
     }
     if (!current) return; // documentation before the first heading
+
+    if (text.startsWith("+")) {
+      if (lastKey) current[lastKey] = `${current[lastKey]}\n${text.slice(1).trim()}`;
+      else warnings.push(`${where}: "+" continues the previous line, but "${current.name}" has none.`);
+      return;
+    }
 
     const pair = /^([a-z]+):\s*(.+)$/i.exec(text);
     if (!pair || !KEYS.has(pair[1].toLowerCase())) {
@@ -93,6 +105,7 @@ export function parsePlaces(markdown) {
       return;
     }
     const key = pair[1].toLowerCase();
+    lastKey = key === "about" ? key : null;
     const value = pair[2].trim();
 
     if (key === "geo") {

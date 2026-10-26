@@ -37,7 +37,7 @@ export function ResultCardContent({
         <span className="line-clamp-2 block text-sm text-muted-foreground">{listing.description}</span>
         <span className="flex flex-wrap items-center gap-1.5">
           <VerificationBadge listing={listing} />
-          {listing.kind === "business" && <OpenStatus business={listing} openNow={openNow} />}
+          {listing.kind === "business" && <OpenStatus business={listing} openNow={openNow} now={now} />}
           {listing.kind === "event" && <LiveBadge event={listing} now={now} />}
           {listing.isDemo && <DemoBadge />}
         </span>

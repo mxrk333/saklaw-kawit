@@ -47,7 +47,7 @@ export function isOpenNow(business: Business, now: Date): boolean | undefined {
 
 export function formatTime(value: string): string {
   const [h, m] = value.split(":").map(Number);
-  const suffix = h >= 12 ? "PM" : "AM";
+  const suffix = h % 24 >= 12 ? "PM" : "AM";
   const hour12 = h % 12 === 0 ? 12 : h % 12;
   return `${hour12}:${String(m).padStart(2, "0")} ${suffix}`;
 }
@@ -71,4 +71,10 @@ export function describeWeek(hours: WeeklyHours, now: Date): HoursRow[] {
     label: formatRanges(ranges),
     isToday: index === today,
   }));
+}
+
+/** Today's hours as one short label (e.g. "4:00 PM – 12:00 AM"), or undefined when no hours are listed. */
+export function formatTodayHours(hours: WeeklyHours | undefined, now: Date): string | undefined {
+  if (!hours) return undefined;
+  return formatRanges(hours[getManilaClock(now).day]);
 }

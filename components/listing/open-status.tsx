@@ -1,10 +1,13 @@
 import { Badge } from "@/components/ui/badge";
+import { formatTodayHours } from "@/lib/utils/hours";
 import type { Business } from "@/types";
 
 /** Only claims open/closed when hours are verified; otherwise says so plainly. */
-export function OpenStatus({ business, openNow }: { business: Business; openNow: boolean | undefined }) {
+export function OpenStatus({ business, openNow, now }: { business: Business; openNow: boolean | undefined; now: Date }) {
   // Unconfirmed hours (from OpenStreetMap) can be stale, so say where they came from.
-  const suffix = business.hoursVerified ? "" : business.hoursSource === "community" ? " · reported hours" : " · OSM hours";
+  const source = business.hoursVerified ? "" : business.hoursSource === "community" ? " · reported hours" : " · OSM hours";
+  const today = formatTodayHours(business.hours, now);
+  const suffix = `${today ? ` · ${today}` : ""}${source}`;
   if (openNow === true) {
     return <Badge className="bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200">Open now{suffix}</Badge>;
   }
