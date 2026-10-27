@@ -17,6 +17,8 @@ export const DEFAULT_VIEW: Pick<ViewState, "pitch" | "bearing"> = {
 };
 
 export const FOCUS_ZOOM = 16.5;
+/** Close enough to see the people at a live event. */
+export const LIVE_FOCUS_ZOOM = 19;
 
 export type TravelMode = "driving" | "walking";
 
@@ -115,7 +117,7 @@ export function getMapConfig(): MapConfig {
           attribution: "© MapTiler © Maxar and other imagery providers",
         }
       : ESRI_IMAGERY;
-  const defaultBasemap: Basemap = process.env.NEXT_PUBLIC_DEFAULT_BASEMAP?.trim().toLowerCase() === "map" ? "map" : "satellite";
+  const defaultBasemap: Basemap = process.env.NEXT_PUBLIC_DEFAULT_BASEMAP?.trim().toLowerCase() === "satellite" ? "satellite" : "map";
 
   return {
     styleUrl,

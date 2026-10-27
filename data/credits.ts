@@ -19,6 +19,7 @@ export const SOFTWARE_CREDITS: readonly (Credit & { pkg: string })[] = [
   { pkg: "shadcn", name: "shadcn/ui", license: "MIT", by: "shadcn", url: "https://github.com/shadcn-ui/ui", use: "Component patterns" },
   { pkg: "@base-ui/react", name: "Base UI", license: "MIT", by: "MUI Team", url: "https://github.com/mui/base-ui", use: "Accessible dialog and form primitives" },
   { pkg: "maplibre-gl", name: "MapLibre GL JS", license: "BSD-3-Clause", by: "MapLibre contributors", url: "https://github.com/maplibre/maplibre-gl-js", use: "Interactive 3D map" },
+  { pkg: "three", name: "three.js", license: "MIT", by: "three.js authors", url: "https://github.com/mrdoob/three.js", use: "The small 3D people shown at live events" },
   { pkg: "lucide-react", name: "Lucide", license: "ISC", by: "Lucide Contributors (includes work by Cole Bemis / Feather, MIT)", url: "https://github.com/lucide-icons/lucide", use: "Icons" },
   { pkg: "class-variance-authority", name: "class-variance-authority", license: "Apache-2.0", by: "Joe Bell", url: "https://github.com/joe-bell/cva", use: "Component variants" },
   { pkg: "clsx", name: "clsx", license: "MIT", by: "Luke Edwards", url: "https://github.com/lukeed/clsx", use: "Class names" },

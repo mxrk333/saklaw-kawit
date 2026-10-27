@@ -3,7 +3,7 @@
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useImperativeHandle, useRef, useState, type Ref } from "react";
-import { DEFAULT_VIEW, FOCUS_ZOOM, type Basemap, type MapConfig } from "@/lib/map/config";
+import { DEFAULT_VIEW, FOCUS_ZOOM, LIVE_FOCUS_ZOOM, type Basemap, type MapConfig } from "@/lib/map/config";
 import { barangayListingId, findArea } from "@/data/barangay-areas";
 import { liveFeatureCollection, routeFeature, selectedAreaOutline, toFeatureCollection, userFeatureCollection } from "@/lib/map/geojson";
 import { KAWIT_BOUNDS, KAWIT_MAX_BOUNDS } from "@/lib/map/kawit";
@@ -28,6 +28,7 @@ import type { RouteResult } from "@/lib/map/routing";
 import type { UserLocation } from "@/hooks/use-user-location";
 import type { Coordinates, MapLocation } from "@/types";
 import { MapStatusOverlay, type MapStatus } from "./map-status-overlay";
+import { PeopleLayer } from "@/lib/map/people-layer";
 import { findLiveNear } from "@/lib/map/live";
 import { buildPopupContent, createOriginElement } from "./map-dom";
 
@@ -80,6 +81,7 @@ export function MapView(props: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const popupRef = useRef<maplibregl.Popup | null>(null);
+  const peopleRef = useRef<PeopleLayer | null>(null);
   const originMarkerRef = useRef<maplibregl.Marker | null>(null);
   const latest = useRef(props);
   const [status, setStatus] = useState<MapStatus>({ state: "loading" });
@@ -133,7 +135,11 @@ export function MapView(props: MapViewProps) {
         container,
         style: config.styleUrl,
         bounds: KAWIT_BOUNDS,
-        fitBoundsOptions: { padding: { top: props.topPadding + 16, left: 16, right: 16, bottom: 16 } },
+        fitBoundsOptions: {
+          padding: { top: props.topPadding + 16, left: 16, right: 16, bottom: 16 },
+          pitch: DEFAULT_VIEW.pitch,
+          bearing: DEFAULT_VIEW.bearing,
+        },
         maxBounds: KAWIT_MAX_BOUNDS,
         minZoom: 11,
         pitch: DEFAULT_VIEW.pitch,
@@ -250,6 +256,17 @@ export function MapView(props: MapViewProps) {
     setSource(map, LIVE_SOURCE, liveFeatureCollection(locations));
   }, [locations, ready]);
 
+  // Small 3D people walking and chatting around events happening now.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    if (!peopleRef.current) {
+      peopleRef.current = new PeopleLayer();
+      map.addLayer(peopleRef.current);
+    }
+    peopleRef.current.setSpots(locations.filter((l) => l.live && l.precision === "exact").map((l) => l.coordinates));
+  }, [locations, ready]);
+
   // Frame results (again when the sheet resizes) unless something is selected.
   const locationsKey = locations.map((l) => l.key).join("|");
   useEffect(() => {
@@ -279,6 +296,7 @@ export function MapView(props: MapViewProps) {
     latest.current.onFollowEnd();
 
     const { topPadding, bottomPadding } = latest.current;
+    const liveEvent = findLiveNear(selected, latest.current.locations);
     const areaBounds = findArea(selected.areaId)?.bounds;
     if (areaBounds) {
       // A barangay with an outline: show the whole area.
@@ -292,7 +310,7 @@ export function MapView(props: MapViewProps) {
       map.flyTo({
         center: [selected.coordinates.lng, selected.coordinates.lat],
         // A point that only marks a barangay's middle should not zoom in to street level.
-        zoom: selected.precision === "area" ? Math.max(map.getZoom(), 14.8) : Math.max(map.getZoom(), FOCUS_ZOOM),
+        zoom: selected.precision === "area" ? Math.max(map.getZoom(), 14.8) : Math.max(map.getZoom(), liveEvent ? LIVE_FOCUS_ZOOM : FOCUS_ZOOM),
         padding: { top: topPadding, left: 0, right: 0, bottom: bottomPadding },
         essential: true,
       });
@@ -301,7 +319,7 @@ export function MapView(props: MapViewProps) {
     if (showPopup) {
       popupRef.current = new maplibregl.Popup({ offset: 18, closeButton: false, closeOnClick: false, maxWidth: "260px" })
         .setLngLat([selected.coordinates.lng, selected.coordinates.lat])
-        .setDOMContent(buildPopupContent(selected, () => latest.current.onRequestDirections(selected.key), findLiveNear(selected, latest.current.locations)))
+        .setDOMContent(buildPopupContent(selected, () => latest.current.onRequestDirections(selected.key), liveEvent))
         .addTo(map);
     }
   }, [selectedKey, showPopup, bottomPadding, ready]);
