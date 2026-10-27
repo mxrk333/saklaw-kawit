@@ -1,5 +1,15 @@
 {
-  "fetchedAt": "2026-10-26T13:23:51.313Z",
+  "fetchedAt": "2026-10-27T04:20:35.526Z",
   "source": "Google News RSS",
-  "items": []
+  "items": [
+    {
+      "id": "d4fe3b171b",
+      "title": "CAVITEX toll fees to increase in Kawit-Zapote section",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcFJnb1NHMXBVUVJlb2xDUEQ1NlFtbGpya0RGOTdkMlI1TWh6T3lJcjZyazdtMHZUOXFnQWZjWGxrbmlkTWVMcldxQUFNd2MybHFiMjNmejlzUkgyQmRPc2pYMThXa1JvN1hjS3VnSFRHaWFWa2hmaHVwaldrZUpoWkNEZndaVGZjMzJ5bVJTXzZFN3NKdFRTTVRvbXdXay1TQjd1N2dTUTZIcEpt?oc=5",
+      "source": "AutoIndustriya",
+      "publishedAt": "2026-10-27T02:57:00.000Z",
+      "category": "traffic",
+      "topic": "traffic"
+    }
+  ]
 }
