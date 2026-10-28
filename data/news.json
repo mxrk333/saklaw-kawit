@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T04:50:42.396Z",
+  "fetchedAt": "2026-10-28T22:22:22.533Z",
   "source": "Google News RSS",
   "items": [
     {
@@ -8,6 +8,15 @@
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPcEFUV01LOUQyd3R4V2x4T2wyNHdDc1ByY3pXLUt5ejVIM2R5ZTFUVEJwMUI3WGxtMk0zX21VYmFRckY4dGZqWnMwMlRWZUwwbTJYbklPYzFQRHFlYU5DRUxiSjQxTEZKYlo0N19nN2IzWmlsdnlHZ1NSMkdOdlVfNE1IX1p3a1lvSFhUOVJ2djljZWp2MHZVUHdLOVpBbDdtODl3YmhCYXR4Z2sxTnZIWFNyZDN3a2JfSWpyMW1qa0hBT0MzVFBXTm1kb0NGMVBneDIzZGYzNA?oc=5",
       "source": "Facebook",
       "publishedAt": "2026-10-28T01:16:00.000Z",
+      "category": "traffic",
+      "topic": "traffic"
+    },
+    {
+      "id": "6f0bd427cd",
+      "title": "Heads up, motorists! CAVITEX has announced the toll hike for the CAVITEX R1 Expressway Extension, covering the Zapote, Las Piñas to Kawit, Cavite segment starting on Wednesday, October 28. This was after the Toll Regulatory Board approved the collecti",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUXFOajhmeWZvVFFOT1dwU0VWVU1OVFFuNTdfdUtSeU1ZZk1FRW01THZNY1JnTkZlR1NfZ05nWU1PREptWm1taGtOUmNPRm45YXVXUV9OaExROHZDTlJZMUZSLXRrbG5jNzVJYlkxOWVpQjR1X0ZDT0MxOEZvUFliSlI3a1dQNXAzcWk0TkVHcnI2ZGdiWDZYLU81cGhwRjdRUUhCTHMyU0FMNEUyWlRKNXJRZGdaRHBVV3ZkVTFCRndoeTRfTmtKV0ZFb3V2b3BqcmJvTkUtNA?oc=5",
+      "source": "Facebook",
+      "publishedAt": "2026-10-27T11:57:06.000Z",
       "category": "traffic",
       "topic": "traffic"
     },
