@@ -1,7 +1,16 @@
 {
-  "fetchedAt": "2026-10-28T22:22:22.533Z",
+  "fetchedAt": "2026-11-07T12:42:10.182Z",
   "source": "Google News RSS",
   "items": [
+    {
+      "id": "1096e7fe84",
+      "title": "Kawit schools adjust schedules, class modalities amid extreme heat",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOFJlcW91UWVDNER2SU1vckY3RUt2MG9NWnNkLVJxLTVsdTEwM2ZmSjlYYW1FOTVVRTdVNmg0dmVlSGhhZ1F6QVFvcElvMHFmUV9WOHZzb1RxQXpVYlMyRWhDUHFLTmhxcGg5TDA4V01VWG81Yjk5ZlYydVdXdDN3V0dmclJJYkF1MWJoYWgtUEg2LUlTeFVLd2ViZ0pIY1RtcGExay1CdWpGUDA?oc=5",
+      "source": "Philippine Information Agency",
+      "publishedAt": "2026-11-04T04:43:41.000Z",
+      "category": "barangay",
+      "topic": "announcement"
+    },
     {
       "id": "c4721426ff",
       "title": "The toll rates for motorists passing through the Manila-Cavite Expressway (CAVITEX) R1 Expressway Extension, covering the Zapote, Las Piñas to Kawit, Cavite segment, will increase again, as the second tranche of the toll adjustment will be implemented on",
@@ -34,7 +43,7 @@
       "title": "CAVITEX toll fees to increase in Kawit-Zapote section",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcFJnb1NHMXBVUVJlb2xDUEQ1NlFtbGpya0RGOTdkMlI1TWh6T3lJcjZyazdtMHZUOXFnQWZjWGxrbmlkTWVMcldxQUFNd2MybHFiMjNmejlzUkgyQmRPc2pYMThXa1JvN1hjS3VnSFRHaWFWa2hmaHVwaldrZUpoWkNEZndaVGZjMzJ5bVJTXzZFN3NKdFRTTVRvbXdXay1TQjd1N2dTUTZIcEpt?oc=5",
       "source": "AutoIndustriya",
-      "publishedAt": "2026-10-27T02:57:00.000Z",
+      "publishedAt": "2026-10-27T07:00:00.000Z",
       "category": "traffic",
       "topic": "traffic"
     }
