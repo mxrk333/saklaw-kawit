@@ -1,15 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T14:15:57.697Z",
+  "fetchedAt": "2026-11-19T15:28:39.437Z",
   "source": "Google News RSS",
-  "items": [
-    {
-      "id": "1096e7fe84",
-      "title": "Kawit schools adjust schedules, class modalities amid extreme heat",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNckdQSnBHalNuYlVlV2hPWl93Q3ljYVdoQUt3Z1kwOFNlTjBnRUFYekNMYm10TlFYSzc1RmdaMjRHYUFtaVBsWi1ZTEE3TEVsc1NlM1lKTXFZbFV5Q3Jld01IaWY2VWpzekw1YzZUdkd6ODUzSl9GLUVZYlJtYnNOWjdKdVJJY1JPYU1Kdmd6V0R2SS0t?oc=5",
-      "source": "Philippine Information Agency",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "category": "barangay",
-      "topic": "announcement"
-    }
-  ]
+  "items": []
 }
