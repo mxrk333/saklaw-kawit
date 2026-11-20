@@ -1,5 +1,15 @@
 {
-  "fetchedAt": "2026-11-19T15:28:39.437Z",
+  "fetchedAt": "2026-11-20T15:05:56.836Z",
   "source": "Google News RSS",
-  "items": []
+  "items": [
+    {
+      "id": "b3f9ab48a4",
+      "title": "Good news for motorists. DOTr Secretary Vince Dizon said the CALAX Subsections 1 and 2, as well as the CAVITEX-CALAX Link connecting Governor’s Drive in General Trias to Kawit, Cavite, are expected to open before Christmas. The toll roads, which span",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVnlwLW1uQ2dRdVB3b01nWmtvYVptVThCT2ozNXFJOG9FTHpuUU55Q1R6M1NzX1lmblJpX2V5UzQ1MVR1Tm1BTGhoaHh3LVppYWJKSG8yS3paUG9yRF94NGdQZHpORGhUWTliV1RUQS01WXBmUWFQMGlPT2lFcVRDQ0U1MEoxREY4LUpDN0NYQ1FkeWNGYldGYzhxLTNpcHhMY0t3LVNMS1pDc2Iyb2RrcmM2WnplblE5NFZ4a2ZCN0NINWUtOVZnZmZBTGNsQUxrWWRheUNMLVM?oc=5",
+      "source": "Facebook",
+      "publishedAt": "2026-11-19T04:22:14.000Z",
+      "category": "traffic",
+      "topic": "traffic"
+    }
+  ]
 }
